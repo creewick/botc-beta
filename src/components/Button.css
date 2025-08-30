@@ -1,0 +1,9 @@
+.button {
+    will-change: transform;
+    transition: transform 0.2s;
+    cursor: pointer;
+    
+    &:active {
+        transform: scale(.9);
+    }
+}
