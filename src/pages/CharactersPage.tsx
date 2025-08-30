@@ -3,9 +3,9 @@ import Token from "../components/Token";
 import characters from '../data/characters/characters.json'
 
 export default function Home() {
-  const renderButton = (icon: string, size: number) => 
+  const renderButton = (icon: string, size: number, title?: string) => 
     <Button key={icon}>
-      <Token icon={icon} size={size} />
+      <Token icon={icon} size={size} title={title} />
     </Button>
 
   const buttons = [
@@ -15,7 +15,7 @@ export default function Home() {
     { icon: 'icons/demon.webp', size: 40 },
     { icon: 'icons/traveller.webp', size: 40 },
     { icon: 'icons/fabled.webp', size: 40 },
-  ] 
+  ];
 
   return (
     <>
@@ -24,7 +24,7 @@ export default function Home() {
         { buttons.map((button) => renderButton(button.icon, button.size)) }
       </div>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', contentVisibility: 'auto' }}>
-        { characters.map((character) => renderButton(`icons/${character.id}.webp`, 90)) }
+        { characters.map((character) => renderButton(`icons/${character.id}.webp`, 90, character.id)) }
       </div>
     </>
   );
