@@ -1,12 +1,17 @@
 .token {
     display: flex;
     position: relative;
+    font-family: 'Dumbledore';
     aspect-ratio: 1/1;
     border-radius: 50% 50%;
     background: #E1DCCD url('/images/token.webp');
     background-size: 113%;
     background-position: 50% 50%;
     outline: 1px solid black;
+}
+
+html[lang="en"] .token {
+    font-family: 'Dumbledore-en';
 }
 
 .token .icon {

@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Dumbledore';
+    font-family: 'Dumbledore-en';
     src: url('/fonts/dumbledor.woff2') format('woff2');
 }
 
@@ -20,6 +20,12 @@ body {
     color: #E1D28C;
     -webkit-text-stroke: 2px black;
     paint-order: stroke fill;
+}
+
+html[lang="en"] .title {
+    font-family: 'Dumbledore-en';
+    text-transform: uppercase;
+    margin-bottom: 14px;
 }
 
 .content {

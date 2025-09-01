@@ -10,7 +10,7 @@ export default function Token({ icon, title, size = 90 }: TokenProps) {
   const base = import.meta.env.BASE_URL;
   const style = { width: size, height: size };
   const iconStyle = { top: title ? -5 : 0, ...style};
-  const textStyle = { fontSize: 16, fontWeight: 500, fontFamily: 'Dumbledore', fill: 'black', strokeWidth: 2, paintOrder: 'stroke', strokeOpacity: 0.5, stroke: 'white' };
+  const textStyle = { fontSize: 16, fontWeight: 500, fill: 'black', strokeWidth: 2, paintOrder: 'stroke', strokeOpacity: 0.5, stroke: 'white' };
 
   return (
     <div className='token' style={style}>
