@@ -14,7 +14,7 @@ export default function Token({ icon, title, size = 90 }: TokenProps) {
   return (
     <div className='token' style={style}>
       <img className='icon' src={icon} loading='lazy' decoding="async"  style={iconStyle} />
-      <svg viewBox="0 0 100 100">
+      <svg className='text' viewBox="0 0 100 100">
         <text style={textStyle}>
           <textPath href='#circle-path' startOffset='50%' textAnchor='middle'>
             {title?.toUpperCase()}

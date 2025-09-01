@@ -4,8 +4,14 @@
     background: #E1DCCD url('/images/token.webp');
     background-size: 113%;
     background-position: 50% 50%;
+    outline: 1px solid black;
 }
 
 .token .icon {
     position: absolute;
+    -webkit-user-drag: none;
+}
+
+.token .text {
+    user-select: none;
 }
