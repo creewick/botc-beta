@@ -571,7 +571,7 @@
       "edition": "snv",
       "setup": false,
       "otherNightOrder": 25,
-      "pithag": ["damsel", "politician", "villageidiot", "cultleader", "goon", "ogre"]
+      "jinxes": ["damsel", "politician", "villageidiot", "cultleader", "goon", "ogre"]
     },
     {
       "id": "fanggu",

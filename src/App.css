@@ -1,14 +1,17 @@
 @font-face {
     font-family: 'Dumbledore';
-    src: url('/botc-beta/assets/fonts/dumbledor.woff2') format('woff2');
+    src: url('/assets/fonts/dumbledor.woff2') format('woff2');
 }
 
 html {
     background: #1F0E26 url('/textures/violet.webp');
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
 }
 
 body {
-    margin: 8px 16px;
+    max-width: 600px;
+    margin: 8px auto;
+    padding: 0 8px;
 }
 
 .title {
@@ -16,4 +19,36 @@ body {
     color: #E1D28C;
     -webkit-text-stroke: 2px black;
     paint-order: stroke fill;
+}
+
+.content {
+    position: relative;
+    background: #F4F2EB url('/textures/paper.webp');
+    margin: 24px -8px 0;
+    padding: 2px 8px;
+}
+
+.content::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #F4F2EB;
+    transform: rotate(-4deg);
+    filter: brightness(0.75);
+
+    @media (min-width: 400px) {
+        transform: rotate(-2deg);
+        width: calc(100% - 20px);
+        left: 10px;
+    }
+}
+
+.note {
+    font-family: 'Dumbledore';
+    font-style: italic;
+    opacity: 0.5;
 }

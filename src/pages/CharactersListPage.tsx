@@ -3,40 +3,34 @@ import Button from "../components/Button";
 import Token from "../components/Token";
 import characters from '../data/characters/characters.json'
 import ru from '../data/characters/characters.ru.json'
-import './CharactersPage.css'
+import './CharactersListPage.css'
+import { getIcon } from "../logic/getIcon";
+import type Character from "../types/Character";
+import type { CharacterType } from "../types/CharacterType";
 
-export default function Home() {
-  const [loadedCharacters, setLoadedCharacters] = useState<typeof characters>([]);
-  const [type, setType] = useState<string>();
+export default function CharactersListPage() {
+  const [loadedCharacters, setLoadedCharacters] = useState<Character[]>([]);
+  const [type, setType] = useState<CharacterType>();
+  const base = import.meta.env.BASE_URL;
 
-  const renderButton = (icon: string, size: number, title: string, onClick?: () => void, className?: string) => 
-    <Button key={title} className={className} onClick={onClick}>
+  const renderButton = (icon: string, size: number, title: string, onClick?: () => void, className?: string, href?: string) => 
+    <Button key={icon} className={className} onClick={onClick} href={href}>
       <Token icon={icon} size={size} title={size > 40 ? title : ''} />
     </Button>
 
   const buttons = [
-    { icon: 'icons/townsfolk_g.webp', size: 40, title: 'townsfolk', onClick: () => onSetType('townsfolk') },
-    { icon: 'icons/outsider_g.webp', size: 40, title: 'outsider', onClick: () => onSetType('outsider') },
-    { icon: 'icons/minion_e.webp', size: 40, title: 'minion', onClick: () => onSetType('minion') },
-    { icon: 'icons/demon_e.webp', size: 40, title: 'demon', onClick: () => onSetType('demon') },
-    { icon: 'icons/traveller.webp', size: 40, title: 'traveller', onClick: () => onSetType('traveller') },
-    { icon: 'icons/fabled.webp', size: 40, title: 'fabled', onClick: () => onSetType('fabled') },
+    { icon: `${base}icons/townsfolk_g.webp`, size: 40, title: 'townsfolk', onClick: () => onSetType('townsfolk') },
+    { icon: `${base}icons/outsider_g.webp`, size: 40, title: 'outsider', onClick: () => onSetType('outsider') },
+    { icon: `${base}icons/minion_e.webp`, size: 40, title: 'minion', onClick: () => onSetType('minion') },
+    { icon: `${base}icons/demon_e.webp`, size: 40, title: 'demon', onClick: () => onSetType('demon') },
+    { icon: `${base}icons/traveller.webp`, size: 40, title: 'traveller', onClick: () => onSetType('traveller') },
+    { icon: `${base}icons/fabled.webp`, size: 40, title: 'fabled', onClick: () => onSetType('fabled') },
   ];
 
-  const onSetType = (newType: string) => {
+  const onSetType = (newType: CharacterType) => {
     if (type === newType) 
       return setType(undefined);
     return setType(newType);
-  }
-
-  const getIcon = (character: any) => {
-    if (character.edition === 'special') 
-      return `icons/${character.id}.webp`;
-    if (['townsfolk', 'outsider'].includes(character.type ?? ''))
-      return `icons/${character.id}_g.webp`;
-    if (['minion', 'demon'].includes(character.type ?? ''))
-      return `icons/${character.id}_e.webp`;
-    return `icons/${character.id}.webp`;
   }
 
   useEffect(() => {
@@ -52,7 +46,7 @@ export default function Home() {
     const loadNextBatch = (typeValue?: string) => {
       if (typeValue !== type) return;
       const nextBatch = filteredCharacters
-        .slice(currentIndex, currentIndex + batchSize);
+        .slice(currentIndex, currentIndex + batchSize) as Character[];
 
       currentIndex += batchSize;
 
@@ -75,15 +69,15 @@ export default function Home() {
       <div className="sticky gradient">
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <h1 className="title">Персонажи</h1>
-          {renderButton('icons/investigator_g.webp', 40, 'search')}
+          {renderButton(`${base}icons/investigator_g.webp`, 40, 'search')}
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '20px' }}>
-          { buttons.map((button) => renderButton(button.icon, button.size, button.title, button.onClick, type === button.title ? 'active' : undefined)) }
+          { buttons.map((button) => renderButton(button.icon, button.size, button.title, button.onClick, type === button.title ? 'active' : 'not-active')) }
         </div>
       </div>
       <div style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap', gap: '8px' }}>
         { loadedCharacters
-            .map((character) => renderButton(getIcon(character), 90, ru[character.id as keyof typeof ru].name)) 
+            .map((character) => renderButton(getIcon(character), 90, ru[character.id as keyof typeof ru].name, undefined, undefined, `${base}characters/${character.id}`)) 
         }
       </div>
     </>

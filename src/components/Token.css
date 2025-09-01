@@ -1,5 +1,7 @@
 .token {
     display: flex;
+    position: relative;
+    aspect-ratio: 1/1;
     border-radius: 50% 50%;
     background: #E1DCCD url('/images/token.webp');
     background-size: 113%;

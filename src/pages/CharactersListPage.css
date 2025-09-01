@@ -1,0 +1,21 @@
+.sticky {
+    position: sticky;
+    z-index: 100;
+    top: 0px;
+}
+
+.gradient {
+    margin: -8px -8px;
+    padding: 0 8px 8px;
+    background: linear-gradient(to bottom, #1F0E26FF 50%, #1F0E2688 80%, #1F0E2600 100%);
+}
+
+.active {
+    border-radius: 50% 50%;
+    scale: 1.2;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+}
+
+.not-active {
+    filter: brightness(0.75);
+}
