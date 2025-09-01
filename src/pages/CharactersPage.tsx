@@ -3,6 +3,7 @@ import Button from "../components/Button";
 import Token from "../components/Token";
 import characters from '../data/characters/characters.json'
 import ru from '../data/characters/characters.ru.json'
+import './CharactersPage.css'
 
 export default function Home() {
   const [visibleCharacters, setVisibleCharacters] = useState<typeof characters>([]);
@@ -51,11 +52,16 @@ export default function Home() {
 
   return (
     <>
-      <h1 className="title">Персонажи</h1>
-      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-        { buttons.map((button) => renderButton(button.icon, button.size)) }
+      <div className="sticky gradient">
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <h1 className="title">Персонажи</h1>
+          {renderButton('icons/investigator_g.webp', 40)}
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '20px' }}>
+          { buttons.map((button) => renderButton(button.icon, button.size)) }
+        </div>
       </div>
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', contentVisibility: 'auto' }}>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', contentVisibility: 'auto'}}>
         { visibleCharacters.map((character) => renderButton(getIcon(character), 90, ru[character.id as keyof typeof ru].name)) }
       </div>
     </>
