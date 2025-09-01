@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Dumbledore';
-    src: url('/assets/fonts/dumbledor.woff2') format('woff2');
+    src: url('/fonts/dumbledor.woff2') format('woff2');
 }
 
 html {
