@@ -1,0 +1,17 @@
+{
+    "home": {
+        "rules": "Правила",
+        "characters": "Персонажи",
+        "scripts": "Сценарии",
+        "events": "Анонсы",
+        "sessions": "Партии"
+    },
+    "characterType": {
+        "townsfolk": "Горожане",
+        "outsider": "Изгои",
+        "minion": "Миньоны",
+        "demon": "Демоны",
+        "traveller": "Странники",
+        "fabled": "Легенды"
+    }
+}

@@ -11,6 +11,7 @@
 
 .token .icon {
     position: absolute;
+    border-radius: 50% 50%;
     -webkit-user-drag: none;
 }
 

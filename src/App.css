@@ -27,6 +27,7 @@ body {
     background: #F4F2EB url('/textures/paper.webp');
     margin: 24px -8px 0;
     padding: 2px 8px;
+    color: rgb(92, 31, 34);
 }
 
 .content::before {

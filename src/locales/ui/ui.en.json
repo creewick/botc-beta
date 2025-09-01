@@ -1,0 +1,17 @@
+{
+    "home": {
+        "rules": "Rules",
+        "characters": "Characters",
+        "scripts": "Scripts",
+        "events": "Events",
+        "sessions": "Sessions"
+    },
+    "characterType": {
+        "townsfolk": "Townsfolks",
+        "outsider": "Outsiders",
+        "minion": "Minions",
+        "demon": "Demons",
+        "traveller": "Travellers",
+        "fabled": "Fabled"
+    }
+}
