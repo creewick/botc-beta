@@ -5,7 +5,6 @@
 
 html {
     background: #1F0E26 url('/textures/violet.webp');
-    overscroll-behavior: none;
 }
 
 body {

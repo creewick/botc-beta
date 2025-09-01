@@ -11,11 +11,11 @@ export default function HomePage() {
     </Button>
 
   const buttons = [
-    { icon: 'icons/preacher.webp', title: 'Правила', href: `${base}rules` },
-    { icon: 'icons/knight.webp', title: 'Персонажи', href: `${base}characters` },
-    { icon: 'icons/steward.webp', title: 'Сценарии', href: `${base}scripts` },
-    { icon: 'icons/yaggababble.webp', title: 'Анонсы', href: `${base}events` },
-    { icon: 'icons/mezepheles.webp', title: 'Партии', href: `${base}sessions` },
+    { icon: 'icons/preacher_g.webp', title: 'Правила', href: `${base}rules` },
+    { icon: 'icons/knight_g.webp', title: 'Персонажи', href: `${base}characters` },
+    { icon: 'icons/steward_g.webp', title: 'Сценарии', href: `${base}scripts` },
+    { icon: 'icons/yaggababble_e.webp', title: 'Анонсы', href: `${base}events` },
+    { icon: 'icons/mezepheles_e.webp', title: 'Партии', href: `${base}sessions` },
   ]
 
   return (
