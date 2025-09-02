@@ -51,8 +51,10 @@ html[lang="en"] .title {
     background: #F4F2EB;
     transform: rotate(-4deg);
     filter: brightness(0.75);
+}
 
-    @media (min-width: 400px) {
+@media screen and (min-width: 400px) {
+    .content::before {
         transform: rotate(-2deg);
         width: calc(100% - 20px);
         left: 10px;
