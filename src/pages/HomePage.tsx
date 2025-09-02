@@ -16,6 +16,7 @@ export default function HomePage() {
 
   const buttons = [
     { icon: 'icons/preacher_g.webp', title: t('home.rules'), href: 'rules' },
+    { icon: 'icons/hellslibrarian.webp', title: t('home.glossary'), href: 'glossary' },
     { icon: 'icons/knight_g.webp', title: t('home.characters'), href: 'characters' },
     { icon: 'icons/steward_g.webp', title: t('home.scripts'), href: 'scripts' },
     { icon: 'icons/yaggababble_e.webp', title: t('home.events'), href: 'events' },

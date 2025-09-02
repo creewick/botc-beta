@@ -6,14 +6,15 @@ import './CharactersListPage.css'
 import { getIcon } from "../logic/getIcon";
 import type Character from "../types/Character";
 import type { CharacterType } from "../types/CharacterType";
-import { useTranslation } from "i18nano";
+import { Translation, useTranslation } from "i18nano";
 import { useParams } from "react-router-dom";
 
 export default function CharactersListPage() {
   const { lang } = useParams();
   const t = useTranslation();
   const allCharacters = characters
-    .sort((a, b) => t(`${a.id}.name`).localeCompare(t(`${b.id}.name`)));
+    .sort((a, b) => t(`${a.id}.name`)
+      .localeCompare(t(`${b.id}.name`)));
   const [loadedCharacters, setLoadedCharacters] = useState<Character[]>([]);
   const [type, setType] = useState<CharacterType>();
   const base = import.meta.env.BASE_URL;
@@ -73,7 +74,7 @@ export default function CharactersListPage() {
       <div className="sticky gradient">
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <h1 className="title">
-            {type ? t(`characterType.${type}`) : t('home.characters')}
+            {type ? <Translation path={`characterType.${type}`} /> : <Translation path="home.characters" />}
           </h1>
           {renderButton('icons/investigator_g.webp', 40, 'search')}
         </div>

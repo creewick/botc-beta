@@ -22,6 +22,10 @@ body {
     paint-order: stroke fill;
 }
 
+.dumbledore {
+    font-family: 'Dumbledore';
+}
+
 html[lang="en"] .title {
     font-family: 'Dumbledore-en';
     text-transform: uppercase;
@@ -32,7 +36,7 @@ html[lang="en"] .title {
     position: relative;
     background: #F4F2EB url('/textures/paper.webp');
     margin: 24px -8px 0;
-    padding: 2px 8px;
+    padding: 2px 16px;
     color: rgb(92, 31, 34);
 }
 

@@ -1,6 +1,7 @@
 {
     "home": {
         "rules": "Rules",
+        "glossary": "Glossary",
         "characters": "Characters",
         "scripts": "Scripts",
         "events": "Events",
