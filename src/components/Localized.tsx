@@ -12,7 +12,7 @@ export default function Localized({ children, locales = [] }: Props) {
   const { lang } = useParams()
 
   useEffect(() => {
-    document.documentElement.setAttribute("lang", lang || "en");
+    document.documentElement.setAttribute("lang", lang || '');
   }, [lang]);
 
   return (
