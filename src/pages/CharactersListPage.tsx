@@ -7,17 +7,14 @@ import { getIcon } from "../logic/getIcon";
 import type Character from "../types/Character";
 import type { CharacterType } from "../types/CharacterType";
 import { Translation, useTranslation } from "i18nano";
-import { useParams } from "react-router-dom";
 
 export default function CharactersListPage() {
-  const { lang } = useParams();
   const t = useTranslation();
   const allCharacters = characters
     .sort((a, b) => t(`${a.id}.name`)
       .localeCompare(t(`${b.id}.name`)));
   const [loadedCharacters, setLoadedCharacters] = useState<Character[]>([]);
   const [type, setType] = useState<CharacterType>();
-  const base = import.meta.env.BASE_URL;
 
   const renderButton = (icon: string, size: number, title: string, onClick?: () => void, className?: string, href?: string) => 
     <Button key={icon} className={className} onClick={onClick} href={href}>
@@ -84,7 +81,7 @@ export default function CharactersListPage() {
       </div>
       <div style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap', gap: '8px' }}>
         { loadedCharacters
-            .map((character) => renderButton(getIcon(character), 90, t(`${character.id}.name`), undefined, undefined, `${base}${lang}/characters/${character.id}`)) 
+            .map((character) => renderButton(getIcon(character), 90, t(`${character.id}.name`), undefined, undefined, `./characters/${character.id}`)) 
         }
       </div>
     </>
