@@ -32,7 +32,7 @@ export default function HomePage() {
         <h2 className="dumbledore">Пятница, 5 сентября</h2>
         <p>Алматы, Биокомбинатская, 9, анти&#8209;кафе&nbsp;MyRoom</p>
         <p>Начало в 19:00, вход бесплатный</p>
-        <p>Запись по номеру: <a href="whatsapp://+77475931159">+77475931159</a></p>
+        <p>Запись по номеру: <a href="https://wa.me/7475931159">+77475931159</a></p>
       </div>
       <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '8px' }}>
         { buttons.map((button) => renderButton(button.icon, button.title, button.href)) }
