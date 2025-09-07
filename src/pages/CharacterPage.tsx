@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import characters from '../data/characters.json';
 import Token from "../components/Token";
 import { getIcon, getSuffix } from "../logic/getIcon";
-import type Character from "../types/Character";
+import type Character from "../types/characters/Character";
 import english from '../locales/characters/characters.en.json';
 import Button from "../components/Button";
 import { useTranslation } from "i18nano";

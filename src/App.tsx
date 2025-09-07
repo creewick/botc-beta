@@ -7,6 +7,8 @@ import locales from './locales/locales'
 import CharacterPage from './pages/CharacterPage'
 import RulesPage from './pages/RulesPage'
 import GlossaryPage from './pages/GlossaryPage'
+import ScriptsListPage from './pages/ScriptsListPage'
+import ScriptPage from './pages/ScriptPage'
 
 export default function App() {
   return (
@@ -27,6 +29,12 @@ export default function App() {
           } />
           <Route path="characters/:id" element={
             <Localized locales={[locales.characters]}><CharacterPage /></Localized>
+          } />
+          <Route path="scripts" element={
+            <Localized locales={[locales.scripts]}><ScriptsListPage /></Localized>
+          } />
+          <Route path="scripts/:id" element={
+            <Localized locales={[locales.scripts, locales.characters]}><ScriptPage /></Localized>
           } />
         </Route>
         <Route path="*" element={<Navigate to="/ru" />} />

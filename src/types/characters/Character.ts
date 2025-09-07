@@ -1,5 +1,5 @@
 import type { CharacterType } from "./CharacterType";
-import type { Edition } from "./Edition";
+import type { Edition } from "../Edition";
 
 export default interface Character {
     id: string;

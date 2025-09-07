@@ -4,8 +4,8 @@ import Token from "../components/Token";
 import characters from '../data/characters.json'
 import './CharactersListPage.css'
 import { getIcon } from "../logic/getIcon";
-import type Character from "../types/Character";
-import type { CharacterType } from "../types/CharacterType";
+import type Character from "../types/characters/Character";
+import type { CharacterType } from "../types/characters/CharacterType";
 import { Translation, useTranslation } from "i18nano";
 
 export default function CharactersListPage() {
@@ -37,33 +37,11 @@ export default function CharactersListPage() {
   }
 
   useEffect(() => {
-    let timerId: number | undefined;
-    const batchSize = 1;
-    let currentIndex = 0;
     const filteredCharacters = allCharacters
       .filter(c => c.edition !== 'special' 
-        && (type ? c.type === type : true));
-    setLoadedCharacters([]);
-
-    const loadNextBatch = (typeValue?: string) => {
-      if (typeValue !== type) return;
-      const nextBatch = filteredCharacters
-        .slice(currentIndex, currentIndex + batchSize) as Character[];
-
-      currentIndex += batchSize;
-
-      if (currentIndex < filteredCharacters.length && typeValue === type) {
-        setLoadedCharacters(prev => [...prev, ...nextBatch]);
-        timerId = window.setTimeout(() => loadNextBatch(typeValue), 0);
-      }
-    };
-
-    loadNextBatch(type);
-    return () => {
-      if (timerId !== undefined) {
-        clearTimeout(timerId);
-      }
-    };
+        && (type ? c.type === type : true)) as Character[];
+        
+    setLoadedCharacters(filteredCharacters);
   }, [type, allCharacters]);
   
   return (

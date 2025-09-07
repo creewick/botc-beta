@@ -1,4 +1,4 @@
-import characters from '../data/characters.json';
+import characters from '../../data/characters.json';
 
 export type RoleId = typeof characters[number]['id'];
 

@@ -1,22 +1,23 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import './Token.css'
 
 interface TokenProps {
   icon: string;
   title?: string;
   size?: number;
+  grayscale?: boolean;
 }
 
-export default function Token({ icon, title, size = 90 }: TokenProps) {
+export default function Token({ icon, title, grayscale = false, size = 90 }: TokenProps) {
   const base = import.meta.env.BASE_URL;
-  const style = { width: size, height: size };
-  const iconStyle = { top: title ? -5 : 0, ...style};
-  const textStyle = { fontSize: 16, fontWeight: 500, fill: 'black', strokeWidth: 2, paintOrder: 'stroke', strokeOpacity: 0.5, stroke: 'white' };
+  const style = { width: size, height: size, filter: grayscale ? 'grayscale(100%)' : 'none' };
+  const iconStyle = { top: title ? -5 : 0 };
 
   return (
     <div className='token' style={style}>
-      <img className='icon' src={`${base}${icon}`} loading='lazy' decoding='async' style={iconStyle} />
+      <LazyLoadImage src={`${base}${icon}`} width={size} height={size} className='icon' style={iconStyle} />
       <svg className='text' viewBox="0 0 100 100">
-        <text style={textStyle}>
+        <text fontSize={16} fontWeight={500} fill="black" strokeWidth={2} paintOrder="stroke" strokeOpacity={0.5} stroke="white">
           <textPath href='#circle-path' startOffset='50%' textAnchor='middle'>
             {title?.toUpperCase()}
           </textPath>

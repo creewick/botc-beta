@@ -15,4 +15,8 @@ export default {
         en: () => import('./glossary/glossary.en.json'),
         ru: () => import('./glossary/glossary.ru.json'),
     },
+    scripts: {
+        en: () => import('./scripts/scripts.en.json'),
+        ru: () => import('./scripts/scripts.ru.json'),
+    },
 }

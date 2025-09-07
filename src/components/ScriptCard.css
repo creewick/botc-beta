@@ -1,0 +1,26 @@
+.scriptCard {
+    background: #F4F2EB url('/textures/paper.webp');
+    padding: 4px 16px;
+    border-radius: 16px;
+    color: rgb(92, 31, 34);
+    flex: 1 1 200px;
+    outline: 1px solid black;
+
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.scriptCard > * {
+    margin: 8px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.scriptTokens {
+    display: flex;
+    padding: 1px;
+}
+
+.scriptTokens .token {
+    margin-right: -9px;
+}

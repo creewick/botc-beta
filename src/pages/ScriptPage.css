@@ -1,0 +1,37 @@
+.characters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 24px;
+}
+
+.character {
+    flex: 1 1 280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.character .icon {
+    margin-left: -16px;
+    margin-top: -8px;
+    margin-bottom: -8px;
+}
+
+.character .name {
+    margin: 0;
+    font-size: 16px;
+}
+
+.character .ability {
+    font-family: 'Roboto-Condensed';
+    font-size: 14px;
+    margin: 0;
+}
+
+.evil {
+    color: #A21;
+}
+
+.good {
+    color: #06B;
+}

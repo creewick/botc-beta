@@ -1,5 +1,5 @@
-import type Character from "../types/Character";
-import type { CharacterType } from "../types/CharacterType";
+import type Character from "../types/characters/Character";
+import type { CharacterType } from "../types/characters/CharacterType";
 
 export function getSuffix(type?: CharacterType) {
   if (type === 'townsfolk') return '_g';
@@ -10,5 +10,6 @@ export function getSuffix(type?: CharacterType) {
 }
 
 export function getIcon(character: Character) {
+  if (!character) return '';
   return `icons/${character.id}${getSuffix(character.type)}.webp`;
 }
