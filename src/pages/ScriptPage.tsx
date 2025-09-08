@@ -4,7 +4,7 @@ import { getCharacters, scripts } from "../logic/scriptUtils";
 import { CHARACTER_TYPES, type CharacterType } from "../types/characters/CharacterType";
 import type Character from "../types/characters/Character";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { getIcon, getSuffix } from "../logic/getIcon";
+import { getIcon } from "../logic/getIcon";
 import './ScriptPage.css';
 
 export default function ScriptPage() {
@@ -15,39 +15,33 @@ export default function ScriptPage() {
 
   function renderCharacterType(type: CharacterType) {
     const characters = scriptCharacters.filter(c => c?.type === type);
-    const alignment = ['demon', 'minion'].includes(type) ? 'evil' : 'good';
 
     if (!characters.length) return null;
 
     return (
-      <div key={type}>
-        <div style={{ display: 'flex', alignItems: 'center' }}>
-          <LazyLoadImage className="icon" src={`${base}icons/${type}${getSuffix(type)}.webp`} width={44} />
-          <h2 className={alignment}>
-            <Translation path={`characterType.${type}`} />
-          </h2>
-
-        </div>
+      <div key={type} className="charactersGroup">
+        <h2 className={'alignmentName ' + type} >
+          <Translation path={`characterType.${type}`} />
+        </h2>
         <div className="characters">
-          {characters.map(character => renderCharacter(character, alignment))}
+          {characters.map(renderCharacter)}
         </div>
       </div>
     )
   }
 
-  function renderCharacter(character: Character, alignment: 'evil' | 'good') {
+  function renderCharacter(character: Character) {
     return (
       <div className="character" key={character.id}>
         <LazyLoadImage className="icon" src={`${base}${getIcon(character)}`} width={80} />
         <div style={{ flex: '1 1 auto' }}>
-          <h3 className={`${alignment} name`}>
+          <h3 className={`${character.type} name`}>
             <Translation path={`${character.id}.name`} />
           </h3>
           <p className="ability">
             <Translation path={`${character.id}.ability`} />
           </p>
         </div>
-
       </div>
     );
   }
@@ -59,7 +53,6 @@ export default function ScriptPage() {
       </h1>
       <div className="content dumbledore">
         {CHARACTER_TYPES.map(renderCharacterType)}
-        <p />
       </div>
     </>
   )

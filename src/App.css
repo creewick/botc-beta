@@ -41,9 +41,12 @@ html[lang="en"] .title {
     position: relative;
     background: #F4F2EB url('/textures/paper.webp');
     margin: 24px -8px 0;
-    padding: 2px 16px;
-    color: rgb(92, 31, 34);
+    padding: 0 16px;
+    box-sizing: border-box;
+    color: #5c1f22;
+    display: flow-root;
 }
+
 
 .content::before {
     content: '';

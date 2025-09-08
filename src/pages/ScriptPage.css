@@ -1,7 +1,25 @@
+.charactersGroup {
+    display: flex;
+    align-items: stretch;
+}
+
 .characters {
     display: flex;
+    position: relative;
     flex-wrap: wrap;
     gap: 12px 24px;
+    margin: 12px 0;
+}
+
+.characters::after {
+    content: '';
+    width: 25%;
+    min-width: 200px;
+    height: 2px;
+    background: linear-gradient(to right, #512f, #5120);
+    position: absolute;
+    bottom: -12px;
+    left: -48px;
 }
 
 .character {
@@ -9,6 +27,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.alignmentName {
+    writing-mode: vertical-rl;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 32px;
+    color: #FFF !important;
+    margin-left: -16px;
+    margin-right: 16px;
+    padding: 16px 0;
 }
 
 .character .icon {
@@ -28,10 +60,90 @@
     margin: 0;
 }
 
-.evil {
+.minion, .demon {
     color: #A21;
 }
 
-.good {
+.townsfolk, .outsider {
     color: #06B;
+}
+
+.traveller {
+    color: #555;
+}
+
+.fabled {
+    color: #C94;
+}
+
+.alignmentName.minion, .alignmentName.demon {
+    background-color: #A21;
+}
+
+.alignmentName.townsfolk, .alignmentName.outsider {
+    background-color: #06B;
+}
+
+.alignmentName.traveller {
+    background-color: #555;
+}
+
+.alignmentName.fabled {
+    background-color: #C94;
+}
+
+@media screen and (max-width: 648px) {
+    .charactersGroup {
+        flex-direction: column;
+    }
+
+    .alignmentName {
+        writing-mode: initial;
+        margin-right: -16px;
+        padding: 0;
+    }
+}
+
+@media print {
+    @page {
+        margin: 0;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .alignmentName {
+        margin-left: 0;
+    }
+
+    .content::before, .content::after {
+        display: none;
+    }
+
+    .characters {
+        gap: 0 16px;
+    }
+
+    .characters::after {
+        background: linear-gradient(
+            to right,
+            rgba(85,17,34,1),
+            rgba(85,17,34,0)
+          ) !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .alignmentName {
+        line-height: initial;
+    }
+
+    .character .name, .alignmentName {
+        font-size: 14px;
+    }
+
+    .character .ability {
+        font-size: 12px;
+    }
 }
