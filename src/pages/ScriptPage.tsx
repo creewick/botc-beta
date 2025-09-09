@@ -1,4 +1,4 @@
-import { Translation } from "i18nano";
+import { Translation, useTranslation } from "i18nano";
 import { useParams } from "react-router-dom";
 import { getCharacters, scripts, twoColumnReorder } from "../logic/scriptUtils";
 import { CHARACTER_TYPES, type CharacterType } from "../types/characters/CharacterType";
@@ -12,6 +12,7 @@ import Button from "../components/Button";
 export default function ScriptPage() {
   const { id } = useParams();
   const { width } = useWindowSize();
+  const t = useTranslation();
   const script = scripts.find(([scriptId]) => scriptId === id)![1];
   const scriptCharacters = getCharacters(script);
   const base = import.meta.env.BASE_URL;
@@ -37,6 +38,11 @@ export default function ScriptPage() {
   }
 
   function renderCharacter(character: Character) {
+    const allText = t(`${character.id}.ability`).split('[');
+    const ability = allText[0];
+    const setup = allText[1] ? '[' + allText[1] : '';
+
+    
     return (
       <div className="character" key={character.id}>
         <Button href={`../characters/${character.id}`}>
@@ -47,7 +53,8 @@ export default function ScriptPage() {
             <Translation path={`${character.id}.name`} />
           </h3>
           <p className="ability">
-            <Translation path={`${character.id}.ability`} />
+            <span>{ability}</span>
+            <span style={{ fontWeight: '600' }}>{setup}</span>
           </p>
         </div>
       </div>
