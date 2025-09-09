@@ -26,7 +26,7 @@ export default function ScriptsListPage() {
 
     return !type
       || meta.tags?.includes(type)
-      || (type === 'custom' && !meta.tags?.includes('official'))
+      || (type === 'custom' && !meta.tags?.includes('official') && !meta.tags?.includes('world_cup'))
       || (type === 'full' && !meta.tags?.includes('teen'));
   })
 
