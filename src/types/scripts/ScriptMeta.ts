@@ -3,6 +3,7 @@ export type ScriptMeta = {
     name: string;
     author?: string;
     logo?: string;
+    tags?: string[];
     background?: string;
     firstNight?: string[];
     otherNight?: string[];

@@ -31,3 +31,9 @@ export function getCharacters(script: Script): Character[] {
 
   return characterIds.map(id => characters.find(c => c.id === id.replaceAll('_', '')) as Character)
 }
+
+export function twoColumnReorder(characters: Character[]) {
+  console.log(characters)
+  const half = Math.ceil(characters.length / 2);
+  return Array.from({ length: characters.length }, (_, i) => characters[i % 2 === 1 ? (i - 1) / 2 + half : i / 2])
+}

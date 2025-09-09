@@ -51,7 +51,7 @@ export default function CharactersListPage() {
           <h1 className="title">
             {type ? <Translation path={`characterType.${type}`} /> : <Translation path="home.characters" />}
           </h1>
-          {renderButton('icons/investigator_g.webp', 40, 'search')}
+          {/* {renderButton('icons/investigator_g.webp', 40, 'search')} */}
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '20px' }}>
           { buttons.map((button) => renderButton(button.icon, button.size, button.title, button.onClick, type === button.title ? 'active' : 'not-active')) }

@@ -14,5 +14,12 @@
         "demon": "Demons",
         "traveller": "Travellers",
         "fabled": "Fabled"
+    },
+    "scriptType": {
+        "official": "Official",
+        "custom": "Custom",
+        "world_cup": "World Cup",
+        "teen": "Teen",
+        "full": "Full"
     }
 }

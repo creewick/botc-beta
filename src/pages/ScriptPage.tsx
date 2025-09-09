@@ -1,20 +1,26 @@
 import { Translation } from "i18nano";
 import { useParams } from "react-router-dom";
-import { getCharacters, scripts } from "../logic/scriptUtils";
+import { getCharacters, scripts, twoColumnReorder } from "../logic/scriptUtils";
 import { CHARACTER_TYPES, type CharacterType } from "../types/characters/CharacterType";
 import type Character from "../types/characters/Character";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { getIcon } from "../logic/getIcon";
 import './ScriptPage.css';
+import { useWindowSize } from "../logic/useWindowSize";
+import Button from "../components/Button";
 
 export default function ScriptPage() {
   const { id } = useParams();
+  const { width } = useWindowSize();
   const script = scripts.find(([scriptId]) => scriptId === id)![1];
   const scriptCharacters = getCharacters(script);
   const base = import.meta.env.BASE_URL;
 
   function renderCharacterType(type: CharacterType) {
     const characters = scriptCharacters.filter(c => c?.type === type);
+    const orderedCharacters = width >= 616
+      ? twoColumnReorder(characters)
+      : characters;
 
     if (!characters.length) return null;
 
@@ -24,7 +30,7 @@ export default function ScriptPage() {
           <Translation path={`characterType.${type}`} />
         </h2>
         <div className="characters">
-          {characters.map(renderCharacter)}
+          {orderedCharacters.map(renderCharacter)}
         </div>
       </div>
     )
@@ -33,7 +39,9 @@ export default function ScriptPage() {
   function renderCharacter(character: Character) {
     return (
       <div className="character" key={character.id}>
+        <Button href={`../characters/${character.id}`}>
         <LazyLoadImage className="icon" src={`${base}${getIcon(character)}`} width={80} />
+        </Button>
         <div style={{ flex: '1 1 auto' }}>
           <h3 className={`${character.type} name`}>
             <Translation path={`${character.id}.name`} />

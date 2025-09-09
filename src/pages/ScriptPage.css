@@ -15,7 +15,7 @@
     content: '';
     width: 25%;
     min-width: 200px;
-    height: 2px;
+    height: 1.5px;
     background: linear-gradient(to right, #512f, #5120);
     position: absolute;
     bottom: -12px;
@@ -44,9 +44,7 @@
 }
 
 .character .icon {
-    margin-left: -16px;
-    margin-top: -8px;
-    margin-bottom: -8px;
+    margin: -16px 0 -16px -16px;
 }
 
 .character .name {
@@ -119,10 +117,6 @@
 
     .content::before, .content::after {
         display: none;
-    }
-
-    .characters {
-        gap: 0 16px;
     }
 
     .characters::after {
