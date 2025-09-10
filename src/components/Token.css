@@ -22,4 +22,5 @@ html[lang="en"] .token {
 
 .token .text {
     user-select: none;
+    position: absolute;
 }

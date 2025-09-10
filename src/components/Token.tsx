@@ -23,7 +23,7 @@ export default function Token({ icon, title, grayscale = false, size = 90 }: Tok
     <div className='token' style={style}>
       <LazyLoadImage src={`${base}${icon}`} width={size} height={size} className='icon' style={iconStyle} />
       <svg className='text' viewBox="0 0 100 100">
-        <text fontSize={fontSize} fontWeight={500} fill="black" letterSpacing={0.5} strokeWidth={2} paintOrder="stroke" strokeOpacity={0.5} stroke="white">
+        <text fontSize={fontSize} fontWeight={500} fill="black" letterSpacing="0.02em" strokeWidth={2} paintOrder="stroke" strokeOpacity={0.5} stroke="white">
           <textPath href='#circle-path' startOffset='50%' textAnchor='middle'>
             {title?.toUpperCase()}
           </textPath>
