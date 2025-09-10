@@ -16,7 +16,7 @@ html {
 body {
     max-width: 900px;
     margin: 8px auto;
-    padding: 0 8px;
+    padding: 0 16px;
     overflow-x: hidden;
 }
 
@@ -43,7 +43,7 @@ html[lang="en"] .title {
 .content {
     position: relative;
     background: #F4F2EB url('/textures/paper.webp');
-    margin: 24px -8px 0;
+    margin: 24px 0 0;
     padding: 0 16px;
     box-sizing: border-box;
     color: #5c1f22;
@@ -62,6 +62,12 @@ html[lang="en"] .title {
     background: #F4F2EB;
     transform: rotate(-2deg);
     filter: brightness(0.75);
+}
+
+@media screen and (max-width: 648px) {
+    body {
+        padding: 0;
+    }
 }
 
 .content::after {

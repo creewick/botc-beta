@@ -1,6 +1,7 @@
 .charactersGroup {
     display: flex;
     align-items: stretch;
+    flex-grow: 1;
 }
 
 .characters {
@@ -11,7 +12,13 @@
     margin: 12px 0;
 }
 
-.characters::after {
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.charactersGroup:not(:last-of-type) .characters::after {
     content: '';
     width: 25%;
     min-width: 200px;
@@ -107,12 +114,32 @@
         margin: 0;
     }
 
-    .title {
-        text-align: center;
+    html {
+        background: #F4F2EB url('/textures/paper.webp');
     }
 
-    .alignmentName {
-        margin-left: 0;
+    body {
+        padding: 0;
+    }
+
+    body::before {
+        content: '';
+        position: absolute;
+        top: -50px;
+        left: 0;
+        width: 32px;
+        height: 132px;
+        margin: 0;
+        background: #06B;
+    }
+
+    .content {
+        background: none;
+        min-height: calc(100vh - 82px);
+    }
+
+    .title {
+        text-align: center;
     }
 
     .content::before, .content::after {
@@ -127,10 +154,6 @@
           ) !important;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
-    }
-
-    .alignmentName {
-        line-height: initial;
     }
 
     .character .name, .alignmentName {

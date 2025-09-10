@@ -7,6 +7,11 @@
         "events": "Events",
         "sessions": "Sessions"
     },
+    "characterSection": {
+        "flavor": "Flavor",
+        "ability": "Ability",
+        "summary": "Summary"
+    },
     "characterType": {
         "townsfolk": "Townsfolks",
         "outsider": "Outsiders",

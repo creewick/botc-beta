@@ -25,19 +25,28 @@ export default function CharacterPage() {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <Token icon={`icons/${character.type}${getSuffix(character.type)}.webp`} size={50} title={t(`characterType.${character.type}`)} />
             <Token icon={`images/${character.edition}.webp`} size={50} />
-              <Button href={`https://wiki.bloodontheclocktower.com/${english[id as keyof typeof english]?.name}`}>
-                <Token icon={`icons/preacher_g.webp`} size={50} title="Вики" />
-              </Button>
+            <Button href={`https://wiki.bloodontheclocktower.com/${english[id as keyof typeof english]?.name}`}>
+              <Token icon={`icons/preacher_g.webp`} size={50} title="Вики" />
+            </Button>
           </div>
         </div>
       </div>
 
       <div className="content">
+        <p className="note">
+          <Translation path={`${id}.flavor`} />
+        </p>
+        <h2 className="dumbledore">
+          <Translation path="characterSection.ability" />
+        </h2>
         <p>
           <Translation path={`${id}.ability`} />
         </p>
-        <p className="note">
-          <Translation path={`${id}.flavor`} />
+        <h2 className="dumbledore">
+          <Translation path="characterSection.summary" />
+        </h2>
+        <p style={{ whiteSpace: 'pre-wrap' }}>
+          <Translation path={`${id}.summary`} />
         </p>
       </div>
     </>
