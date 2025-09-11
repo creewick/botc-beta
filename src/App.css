@@ -45,7 +45,6 @@ html[lang="en"] .title {
     background: #F4F2EB url('/textures/paper.webp');
     margin: 24px 0 0;
     padding: 0 16px;
-    box-sizing: border-box;
     color: #5c1f22;
     display: flow-root;
 }

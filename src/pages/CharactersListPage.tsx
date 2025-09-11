@@ -38,7 +38,7 @@ export default function CharactersListPage() {
 
   useEffect(() => {
     const filteredCharacters = allCharacters
-      .filter(c => c.edition !== 'special' 
+      .filter(c => c.edition === '' 
         && (type ? c.type === type : true)) as Character[];
         
     setLoadedCharacters(filteredCharacters);

@@ -66,7 +66,7 @@ export default function ScriptPage() {
       <h1 className="title">
         <Translation path={id ?? ''} />
       </h1>
-      <div className="content dumbledore">
+      <div className="content dumbledore flex">
         {CHARACTER_TYPES.map(renderCharacterType)}
       </div>
     </>

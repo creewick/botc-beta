@@ -42,12 +42,15 @@ export default function CharacterPage() {
         <p>
           <Translation path={`${id}.ability`} />
         </p>
-        <h2 className="dumbledore">
-          <Translation path="characterSection.summary" />
-        </h2>
-        <p style={{ whiteSpace: 'pre-wrap' }}>
-          <Translation path={`${id}.summary`} />
-        </p>
+        { t(`${id}.summary`) && 
+        <>
+          <h2 className="dumbledore">
+            <Translation path="characterSection.summary" />
+          </h2>
+          <p style={{ whiteSpace: 'pre-wrap' }}>
+            <Translation path={`${id}.summary`} />
+          </p>
+        </>}
       </div>
     </>
   );
