@@ -70,6 +70,9 @@ export default function ScriptPage() {
       <QRCodeCanvas className="qr" value={window.location.href} size={80} bgColor="#0000" fgColor="#5c1f22" style={{ position: 'absolute', right: 10, top: 10 }} />
       <div className="content dumbledore flex">
         {CHARACTER_TYPES.map(renderCharacterType)}
+        <div className="charactersGroup notFirstNight" style={{justifyContent: 'center', alignItems: 'center', minHeight: 40 }}>
+          * <Translation path="script.notFirstNight" />
+        </div>
       </div>
     </>
   )

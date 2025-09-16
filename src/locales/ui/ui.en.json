@@ -26,5 +26,8 @@
         "world_cup": "World Cup",
         "teen": "Teen",
         "full": "Full"
+    },
+    "script": {
+        "notFirstNight": "Not the First Night"
     }
 }
