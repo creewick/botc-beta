@@ -8,6 +8,7 @@ import { getIcon } from "../logic/getIcon";
 import './ScriptPage.css';
 import { useWindowSize } from "../logic/useWindowSize";
 import Button from "../components/Button";
+import { QRCodeCanvas, QRCodeSVG } from "qrcode.react";
 
 export default function ScriptPage() {
   const { id } = useParams();
@@ -38,6 +39,7 @@ export default function ScriptPage() {
   }
 
   function renderCharacter(character: Character) {
+    if (!character) return <div className="character" />;
     const allText = t(`${character.id}.ability`).split('[');
     const ability = allText[0];
     const setup = allText[1] ? '[' + allText[1] : '';
@@ -46,7 +48,7 @@ export default function ScriptPage() {
     return (
       <div className="character" key={character.id}>
         <Button href={`../characters/${character.id}`}>
-        <LazyLoadImage className="icon" src={`${base}${getIcon(character)}`} width={80} />
+        <img className="icon" src={`${base}${getIcon(character)}`} width={80} />
         </Button>
         <div style={{ flex: '1 1 auto' }}>
           <h3 className={`${character.type} name`}>
@@ -63,9 +65,10 @@ export default function ScriptPage() {
 
   return (
     <>
-      <h1 className="title">
+      <h1 className="title" style={{ flexGrow: 1 }}>
         <Translation path={id ?? ''} />
       </h1>
+      <QRCodeCanvas className="qr" value={window.location.href} size={80} bgColor="#0000" fgColor="#5c1f22" style={{ position: 'absolute', right: 10, top: 10 }} />
       <div className="content dumbledore flex">
         {CHARACTER_TYPES.map(renderCharacterType)}
       </div>

@@ -97,6 +97,10 @@
     background-color: #C94;
 }
 
+.qr {
+    display: none;
+}
+
 @media screen and (max-width: 648px) {
     .charactersGroup {
         flex-direction: column;
@@ -133,13 +137,19 @@
         background: #06B;
     }
 
+    .qr {
+        display: block;
+    }
+
     .content {
         background: none;
         min-height: calc(100vh - 82px);
     }
 
     .title {
-        text-align: center;
+        padding-left: 48px;
+        color: #5c1f22;    
+        -webkit-text-stroke: 1px #5c1f22;
     }
 
     .content::before, .content::after {
@@ -154,13 +164,5 @@
           ) !important;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
-    }
-
-    .character .name, .alignmentName {
-        font-size: 14px;
-    }
-
-    .character .ability {
-        font-size: 12px;
     }
 }

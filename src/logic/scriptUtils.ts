@@ -33,7 +33,10 @@ export function getCharacters(script: Script): Character[] {
 }
 
 export function twoColumnReorder(characters: Character[]) {
-  console.log(characters)
   const half = Math.ceil(characters.length / 2);
-  return Array.from({ length: characters.length }, (_, i) => characters[i % 2 === 1 ? (i - 1) / 2 + half : i / 2])
+  
+  return Array.from({ length: characters.length + characters.length % 2 }, (_, i) => {
+    if (i % 2 === 0) return characters[i / 2];
+    return characters[(i - 1) / 2 + half];
+  }) as Character[];
 }

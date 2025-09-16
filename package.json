@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "i18nano": "^4.1.0",
+    "qrcode.react": "^4.2.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-lazy-load-image-component": "^1.6.3",
