@@ -18,7 +18,7 @@ function ScriptCardInternal({ script, scriptId }: ScriptCardProps) {
   const characters = getCharacters(script).reverse().filter(c => ['demon', 'minion'].includes(c?.type ?? ''))
 
   return (
-    <Button className="scriptCard" href={`./scripts/${scriptId}`}>
+    <Button className="scriptCard" href={`${window.location.href}/${scriptId}`}>
       <h3 className="dumbledore">
         <Translation path={scriptId} />
       </h3>
