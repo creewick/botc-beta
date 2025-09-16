@@ -8,7 +8,7 @@
     display: flex;
     position: relative;
     flex-wrap: wrap;
-    gap: 12px 24px;
+    gap: 12px 12px;
     margin: 12px 0;
 }
 
@@ -18,17 +18,16 @@
     align-items: stretch;
 }
 
-.charactersGroup:not(:last-of-type) .characters::after {
+.charactersGroup:not(:last-of-type) > .characters::after {
     content: '';
-    width: 25%;
+    width: 100%;
     min-width: 200px;
-    height: 1.5px;
-    background: linear-gradient(to right, #512f, #5120);
+    height: 2px;
+    background: linear-gradient(to right, #715248ff, #71524820, #71524800);
     position: absolute;
     bottom: -12px;
     left: -48px;
 }
-
 .character {
     flex: 1 1 280px;
     display: flex;
@@ -37,13 +36,16 @@
 }
 
 .alignmentName {
+    position: relative;
     writing-mode: vertical-rl;
     text-transform: uppercase;
     text-align: center;
     margin: 0;
     font-size: 18px;
     font-weight: 100;
-    line-height: 32px;
+    line-height: 48px;
+    background: repeat url('/textures/ribbon.webp');
+    background-size: 48px;
     color: #FFF !important;
     margin-left: -16px;
     margin-right: 16px;
@@ -51,7 +53,7 @@
 }
 
 .character .icon {
-    margin: -16px 0 -16px -16px;
+    margin: -20px 0 -20px -16px;
 }
 
 .character .name {
@@ -63,6 +65,7 @@
     font-family: 'Roboto-Condensed';
     font-size: 14px;
     margin: 0;
+    white-space: pre-wrap;
 }
 
 .minion, .demon {
@@ -79,22 +82,6 @@
 
 .fabled {
     color: #C94;
-}
-
-.alignmentName.minion, .alignmentName.demon {
-    background-color: #A21;
-}
-
-.alignmentName.townsfolk, .alignmentName.outsider {
-    background-color: #06B;
-}
-
-.alignmentName.traveller {
-    background-color: #555;
-}
-
-.alignmentName.fabled {
-    background-color: #C94;
 }
 
 .qr {
@@ -131,10 +118,11 @@
         position: absolute;
         top: -50px;
         left: 0;
-        width: 32px;
+        width: 48px;
         height: 132px;
         margin: 0;
-        background: #06B;
+        background: repeat url('/textures/ribbon.webp');
+        background-size: 48px;
     }
 
     .qr {
@@ -147,9 +135,18 @@
     }
 
     .title {
-        padding-left: 48px;
+        padding-left: 64px;
         color: #5c1f22;    
         -webkit-text-stroke: 1px #5c1f22;
+    }
+
+    .character .name {
+        margin: 0;
+        font-size: 14px;
+    }
+    
+    .character .ability {
+        font-size: 12px;
     }
 
     .content::before, .content::after {
@@ -157,11 +154,6 @@
     }
 
     .characters::after {
-        background: linear-gradient(
-            to right,
-            rgba(85,17,34,1),
-            rgba(85,17,34,0)
-          ) !important;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
     }

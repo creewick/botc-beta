@@ -47,7 +47,7 @@ export default function ScriptPage() {
     return (
       <div className="character" key={character.id}>
         <Button href={`../characters/${character.id}`}>
-        <img className="icon" src={`${base}${getIcon(character)}`} width={80} />
+          <img className="icon" src={`${base}${getIcon(character)}`} width={90} />
         </Button>
         <div style={{ flex: '1 1 auto' }}>
           <h3 className={`${character.type} name`}>
