@@ -3,12 +3,11 @@ import { useParams } from "react-router-dom";
 import { getCharacters, scripts, twoColumnReorder } from "../logic/scriptUtils";
 import { CHARACTER_TYPES, type CharacterType } from "../types/characters/CharacterType";
 import type Character from "../types/characters/Character";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import { getIcon } from "../logic/getIcon";
 import './ScriptPage.css';
 import { useWindowSize } from "../logic/useWindowSize";
 import Button from "../components/Button";
-import { QRCodeCanvas, QRCodeSVG } from "qrcode.react";
+import { QRCodeCanvas } from "qrcode.react";
 
 export default function ScriptPage() {
   const { id } = useParams();
