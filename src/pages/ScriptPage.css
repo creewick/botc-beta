@@ -110,7 +110,7 @@
     }
 
     body {
-        padding: 0;
+        padding: 16px 0 0 16px;
     }
 
     body::before {
@@ -119,7 +119,7 @@
         left: 0;
         top: 0;
         bottom: 0;
-        width: 48px;
+        width: 64px;
         margin: 0;
         background: repeat url('/textures/ribbon.webp');
         background-size: 48px;
@@ -131,7 +131,7 @@
 
     .content {
         background: none;
-        min-height: calc(100vh - 82px);
+        min-height: calc(100vh - 108px);
     }
 
     .title {

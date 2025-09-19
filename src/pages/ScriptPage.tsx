@@ -67,7 +67,7 @@ export default function ScriptPage() {
       <h1 className="title" style={{ flexGrow: 1 }}>
         <Translation path={id ?? ''} />
       </h1>
-      <QRCodeCanvas className="qr" value={window.location.href} size={80} bgColor="#0000" fgColor="#5c1f22" style={{ position: 'absolute', right: 10, top: 10 }} />
+      <QRCodeCanvas className="qr" value={window.location.href} size={80} bgColor="#0000" fgColor="#5c1f22" style={{ position: 'absolute', right: 24, top: 24 }} />
       <div className="content dumbledore flex">
         {CHARACTER_TYPES.map(renderCharacterType)}
         <div className="charactersGroup notFirstNight" style={{justifyContent: 'center', alignItems: 'center', minHeight: 40 }}>
