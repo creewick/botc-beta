@@ -70,6 +70,9 @@ export default function ScriptPage() {
     const ability = allText[0];
     const setup = allText[1] ? '[' + allText[1] : '';
 
+    const jinxes = character.jinxes
+      ?.filter(j => scriptCharacters.find(c => c.id === j))
+      .map(j => scriptCharacters.find(c => c.id === j)!);
     
     return (
       <div className="character" key={character.id}>
@@ -79,6 +82,7 @@ export default function ScriptPage() {
         <div style={{ flex: '1 1 auto' }}>
           <h3 className={`${character.type} name`}>
             <Translation path={`${character.id}.name`} />
+            {jinxes?.map((j: Character) => <img src={`${base}${getIcon(j)}`} width={40} style={{ marginBottom: -14, marginRight: -14 }} />)}
           </h3>
           <p className="ability">
             <span>{ability}</span>
