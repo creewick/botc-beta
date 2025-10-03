@@ -102,7 +102,7 @@ export default function ScriptPage() {
 
   function renderJinx(character1: Character, character2: Character) {
     return (
-      <div className="flex jinx" style={{ fontFamily: 'Roboto-Condensed', alignItems: 'center' }}>
+      <div className="flex jinx" style={{ fontFamily: 'Roboto-Condensed', fontSize: 14, alignItems: 'center' }}>
         <Button href={`../characters/${character1.id}`}>
           <img className="icon" src={`${base}${getIcon(character1)}`} width={60} />
         </Button>
