@@ -1,7 +1,7 @@
 import { Translation, useTranslation } from "i18nano";
 import { useParams } from "react-router-dom";
 import { getCharacters, scripts, twoColumnReorder } from "../logic/scriptUtils";
-import { BASIC_CHARACTER_TYPES, type CharacterType } from "../types/characters/CharacterType";
+import { BASIC_CHARACTER_TYPES, type BasicCharacterType, type CharacterType } from "../types/characters/CharacterType";
 import type Character from "../types/characters/Character";
 import { getIcon } from "../logic/getIcon";
 import './ScriptPage.css';
@@ -20,8 +20,8 @@ export default function ScriptPage() {
 
   function renderNightOrder(firstNight: boolean) {
     const characters = firstNight
-      ? scriptCharacters.filter(c => c.firstNightOrder && BASIC_CHARACTER_TYPES.includes(c.type ?? '')).sort((a, b) => a.firstNightOrder! - b.firstNightOrder!)
-      : scriptCharacters.filter(c => c.otherNightOrder && BASIC_CHARACTER_TYPES.includes(c.type ?? '')).sort((a, b) => a.otherNightOrder! - b.otherNightOrder!);
+      ? scriptCharacters.filter(c => c.firstNightOrder && BASIC_CHARACTER_TYPES.includes(c.type as BasicCharacterType)).sort((a, b) => a.firstNightOrder! - b.firstNightOrder!)
+      : scriptCharacters.filter(c => c.otherNightOrder && BASIC_CHARACTER_TYPES.includes(c.type as BasicCharacterType)).sort((a, b) => a.otherNightOrder! - b.otherNightOrder!);
     
     return (
       <div className={`${firstNight ? 'first-night' : 'other-night'} night-order`}>
