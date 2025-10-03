@@ -28,6 +28,13 @@
         "full": "Полные"
     },
     "script": {
-        "notFirstNight": "Не в первую ночь"
+        "notFirstNight": "Не в первую ночь",
+        "copy": "Копировать",
+        "print": "Печать",
+        "characters": "Персонажи",
+        "nightOrder": "Порядок ночи",
+        "jinxes": "Проклятья",
+        "setup": "Подготовка",
+        "fabled": "Легенды"
     }
 }

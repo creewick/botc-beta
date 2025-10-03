@@ -28,6 +28,13 @@
         "full": "Full"
     },
     "script": {
-        "notFirstNight": "Not the First Night"
+        "notFirstNight": "Not the First Night",
+        "copy": "Copy",
+        "print": "Print",
+        "characters": "Characters",
+        "nightOrder": "Night Order",
+        "jinxes": "Jinxes",
+        "setup": "Setup",
+        "fabled": "Fabled"
     }
 }

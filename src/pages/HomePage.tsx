@@ -9,18 +9,17 @@ export default function HomePage() {
   const t = useTranslation();
   const base = import.meta.env.BASE_URL;
 
-  const renderButton = (icon: string, title: string, href: string, grayscale?: boolean) => 
-    <Button href={`${base}${lang}/${href}`} key={href} disabled={grayscale}>
-      <Token icon={icon} title={title} grayscale={grayscale} />
+  const renderButton = (icon: string, title: string, href: string) => 
+    <Button href={href} key={href}>
+      <Token icon={icon} title={title} />
     </Button>
 
   const buttons = [
-    { icon: 'icons/preacher_g.webp', title: t('home.rules'), href: 'rules' },
-    { icon: 'icons/knight_g.webp', title: t('home.characters'), href: 'characters' },
-    { icon: 'icons/steward_g.webp', title: t('home.scripts'), href: 'scripts' },
-    { icon: 'icons/hellslibrarian.webp', title: t('home.glossary'), href: 'glossary' },
-    { icon: 'icons/yaggababble_e.webp', title: t('home.events'), href: 'events', grayscale: true },
-    { icon: 'icons/mezepheles_e.webp', title: t('home.sessions'), href: 'sessions', grayscale: true },
+    { icon: 'icons/preacher_g.webp', title: t('home.rules'), href: `${base}${lang}/rules` },
+    { icon: 'icons/knight_g.webp', title: t('home.characters'), href: `${base}${lang}/characters` },
+    { icon: 'icons/steward_g.webp', title: t('home.scripts'), href: `${base}${lang}/scripts` },
+    { icon: 'icons/spy_e.webp', title: 'Instagram', href: 'http://instagram.com/clocktower_almaty/' },
+    { icon: 'icons/mezepheles_e.webp', title: t('home.sessions'), href: 'https://clocktracker.app/@creewick?view=games' },
   ]
 
   return (
@@ -28,8 +27,13 @@ export default function HomePage() {
       <div style={{ textAlign: 'center' }}>
         <img src={`${base}images/logo.${lang}.webp`} alt="logo" className="logo" />
       </div>
+      <div className="content" style={{ margin: '0 0 24px 0' }}>
+        <p>Каждую пятницу 19:00<br/>
+        Алматы, Биокомбинатская 9, MyRoom</p>
+        <p>Запись через <a href="https://t.me/creewick">Telegram</a></p>
+      </div>
       <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '8px' }}>
-        { buttons.map((button) => renderButton(button.icon, button.title, button.href, button.grayscale)) }
+        { buttons.map((button) => renderButton(button.icon, button.title, button.href)) }
       </div>
     </>
   );

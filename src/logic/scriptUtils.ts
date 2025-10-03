@@ -32,6 +32,12 @@ export function getCharacters(script: Script): Character[] {
   return characterIds.map(id => characters.find(c => c.id === id.replaceAll('_', '')) as Character)
 }
 
+export function getJinxes(script: Script) {
+  const characters = getCharacters(script)
+
+  characters.map(c => c.jinxes)
+}
+
 export function twoColumnReorder(characters: Character[]) {
   const half = Math.ceil(characters.length / 2);
   
