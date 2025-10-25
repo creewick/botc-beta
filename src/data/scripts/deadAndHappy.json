@@ -32,7 +32,7 @@
     "fanggu",
     {
         "id": "veil",
-        "image": "https://botc.1nv.is/static/characters/veil.png",
+        "image": "https://creewick.github.io/botc-beta/icons/phantomDetectives.webp",
         "name": "Phantom Detectives",
         "team": "fabled",
         "ability": "Dead players (not Demons) keep their abilities. Each Townsfolk loses their ability at the start of night 1, then regains it on death."

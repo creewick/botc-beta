@@ -141,7 +141,7 @@ export default function ScriptPage() {
       <div className="print-hide flex buttons">
         {buttons.map((button) => renderButton(button.icon, 60, button.title, button.onClick))}
       </div>
-      {/* <QRCodeCanvas className="qr" value={window.location.href} size={70} bgColor="#0000" fgColor="#5c1f22" /> */}
+      <QRCodeCanvas className="qr" value={window.location.href} size={70} bgColor="#0000" fgColor="#5c1f22" />
       <div className="content dumbledore flex flex-column">
         <div className="flex">
           <h2 className="alignment-name">&nbsp;</h2>
