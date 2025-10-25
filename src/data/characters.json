@@ -450,7 +450,7 @@
       "setup": false,
       "firstNightOrder": 71,
       "otherNightOrder": 89,
-      "jinxes": ["chambermaid", "lunatic"]
+      "jinxes": ["chambermaid", "lunatic", "marionette", "drunk"]
     },
     {
       "id": "flowergirl",
@@ -1217,6 +1217,12 @@
     },
     {
       "id": "ferryman",
+      "type": "fabled",
+      "edition": "fabled",
+      "setup": false
+    },
+    {
+      "id": "phantomDetectives",
       "type": "fabled",
       "edition": "fabled",
       "setup": false

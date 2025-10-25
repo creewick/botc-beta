@@ -102,7 +102,7 @@ export default function ScriptPage() {
 
   function renderJinx(character1: Character, character2: Character) {
     return (
-      <div className="flex jinx" style={{ fontFamily: 'Roboto-Condensed', fontSize: 14, alignItems: 'center' }}>
+      <div className="flex jinx" style={{ fontFamily: 'Roboto-Condensed', fontSize: 14, fontWeight: 300, alignItems: 'center' }}>
         <Button href={`../characters/${character1.id}`}>
           <img className="icon" src={`${base}${getIcon(character1)}`} width={60} />
         </Button>
@@ -141,10 +141,10 @@ export default function ScriptPage() {
       <div className="print-hide flex buttons">
         {buttons.map((button) => renderButton(button.icon, 60, button.title, button.onClick))}
       </div>
-      <QRCodeCanvas className="qr" value={window.location.href} size={70} bgColor="#0000" fgColor="#5c1f22" />
+      {/* <QRCodeCanvas className="qr" value={window.location.href} size={70} bgColor="#0000" fgColor="#5c1f22" /> */}
       <div className="content dumbledore flex flex-column">
         <div className="flex">
-          <h2 className="alignment-name"> </h2>
+          <h2 className="alignment-name">&nbsp;</h2>
           <h1 className="script-title" style={{ flexGrow: 1 }}>
             <Translation path={id ?? ''} />
           </h1>

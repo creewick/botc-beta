@@ -1,0 +1,40 @@
+[
+    {
+        "id": "_meta",
+        "author": "Койотто",
+        "name": "Dead and Happy",
+        "bootlegger": [
+            "Dead players (not Demons) keep their abilities. Each Townsfolk loses their ability at the start of night 1, then regains it on death."
+        ]
+    },
+    "investigator",
+    "washerwoman",
+    "librarian",
+    "clockmaker",
+    "dreamer",
+    "empath",
+    "towncrier",
+    "oracle",
+    "mathematician",
+    "juggler",
+    "seamstress",
+    "slayer",
+    "artist",
+    "barber",
+    "drunk",
+    "klutz",
+    "sweetheart",
+    "devilsadvocate",
+    "marionette",
+    "organgrinder",
+    "goblin",
+    "vigormortis",
+    "fanggu",
+    {
+        "id": "veil",
+        "image": "https://botc.1nv.is/static/characters/veil.png",
+        "name": "Phantom Detectives",
+        "team": "fabled",
+        "ability": "Dead players (not Demons) keep their abilities. Each Townsfolk loses their ability at the start of night 1, then regains it on death."
+    }
+]
