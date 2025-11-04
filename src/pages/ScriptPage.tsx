@@ -20,8 +20,8 @@ export default function ScriptPage() {
 
   function renderNightOrder(firstNight: boolean) {
     const characters = firstNight
-      ? scriptCharacters.filter(c => c.firstNightOrder && BASIC_CHARACTER_TYPES.includes(c.type as BasicCharacterType)).sort((a, b) => a.firstNightOrder! - b.firstNightOrder!)
-      : scriptCharacters.filter(c => c.otherNightOrder && BASIC_CHARACTER_TYPES.includes(c.type as BasicCharacterType)).sort((a, b) => a.otherNightOrder! - b.otherNightOrder!);
+      ? scriptCharacters.filter(c => c?.firstNightOrder && BASIC_CHARACTER_TYPES.includes(c?.type as BasicCharacterType)).sort((a, b) => a.firstNightOrder! - b.firstNightOrder!)
+      : scriptCharacters.filter(c => c?.otherNightOrder && BASIC_CHARACTER_TYPES.includes(c?.type as BasicCharacterType)).sort((a, b) => a.otherNightOrder! - b.otherNightOrder!);
     
     return (
       <div className={`${firstNight ? 'first-night' : 'other-night'} night-order`}>
@@ -71,8 +71,8 @@ export default function ScriptPage() {
     const setup = allText[1] ? '[' + allText[1] : '';
 
     const jinxes = character.jinxes
-      ?.filter(j => scriptCharacters.find(c => c.id === j))
-      .map(j => scriptCharacters.find(c => c.id === j)!);
+      ?.filter(j => scriptCharacters.find(c => c?.id === j))
+      .map(j => scriptCharacters.find(c => c?.id === j)!);
     
     return (
       <div className="character" key={character.id}>
@@ -95,8 +95,8 @@ export default function ScriptPage() {
 
   function renderJinxes() {
     return scriptCharacters
-      .map(c => c.jinxes?.filter(j => scriptCharacters.find(c => c.id === j))
-        .map(j => renderJinx(c, scriptCharacters.find(c => c.id === j)!)))
+      .map(c => c?.jinxes?.filter(j => scriptCharacters.find(c => c?.id === j))
+        .map(j => renderJinx(c, scriptCharacters.find(c => c?.id === j)!)))
       .flat();
   }
 
@@ -116,13 +116,13 @@ export default function ScriptPage() {
 
   function renderSetup() {
     return scriptCharacters
-      .filter(c => c.setup)
+      .filter(c => c?.setup)
       .map(c => renderNightOrderCharacter(c));
   }
 
   function renderFabled() {
     return scriptCharacters
-      .filter(c => c.type === 'fabled')
+      .filter(c => c?.type === 'fabled')
       .map(c => renderNightOrderCharacter(c));
   }
 
