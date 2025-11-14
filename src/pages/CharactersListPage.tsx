@@ -39,7 +39,7 @@ export default function CharactersListPage() {
   useEffect(() => {
     const filteredCharacters = allCharacters
       .filter(c => c.edition !== 'special' 
-        && (type ? c.type === type : true)) as Character[];
+        && (type ? c.team === type : true)) as Character[];
         
     setLoadedCharacters(filteredCharacters);
   }, [type, allCharacters]);
