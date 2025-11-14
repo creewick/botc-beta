@@ -23,7 +23,7 @@ export default function CharacterPage() {
             <Translation path={`${id}.name`} />
           </h1>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <Token icon={`icons/${character.type}${getSuffix(character.type)}.webp`} size={50} title={t(`characterType.${character.type}`)} />
+            <Token icon={`icons/${character.team}${getSuffix(character.team)}.webp`} size={50} title={t(`characterType.${character.team}`)} />
             <Token icon={`images/${character.edition}.webp`} size={50} />
             <Button href={`https://wiki.bloodontheclocktower.com/${english[id as keyof typeof english]?.name}`}>
               <Token icon={`icons/preacher_g.webp`} size={50} title="Вики" />

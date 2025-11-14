@@ -1613,5 +1613,160 @@
       "name": "Ferryman",
       "ability": "On the final day, all dead players regain their vote token.",
       "flavor": "When righteous dreams come, they have the weight of truth."
+    },
+    "iamspartacus_fall_of_rome": {
+      "name": "\"I Am Spartacus!\"",
+      "ability": "Each day, up to half the living players (rounded up & Travellers don’t count) may publicly claim to be Spartacus.",
+      "flavor": "\"The ego cuts deeper than the flesh.\" - Spartacus c. 103 B.C. - 71 B.C."
+    },
+    "sculptor_fall_of_rome": {
+      "name": "Sculptor",
+      "ability": "You start knowing a player. Each night*, you learn the alignment of their most recent nomination.",
+      "flavor": "\"The sculptor's hand can only break the spell to free the figures slumbering in the stone.\" - Michelangelo 1501 A.D."
+    },
+    "vestalvirgin_fall_of_rome": {
+      "name": "Vestal Virgin",
+      "ability": "You start knowing 1 good & 1 evil character, 1 of which is in-play. When they die, that night you learn 1 good & 1 evil character, 1 of which is in-play.",
+      "flavor": "\"Some are of the opinion that these vestals had no other business than the preservation of the sacred fire; but others conceive that they were keepers of other divine secrets, concealed from all but themselves.\" - Lucius Mestrius 'Plutarch' Plutarchus c. 49 A.D. - 119 A.D."
+    },
+    "physician_fall_of_rome": {
+      "name": "Physician",
+      "ability": "Each night, choose two players (not yourself): they are sober, healthy & get true info tonight. The 1st time the Demon kills one, you learn the Demon type.",
+      "flavor": "\"Some patients recover, because they believe in doctors.\" - Hippocrates of Kos c. 460 B.C. - c. 370 B.C."
+    },
+    "legionary_fall_of_rome": {
+      "name": "Legionary",
+      "ability": "Each night, you learn how many living evil players are sat clockwise between yourself and the next living Legionary. [+0 to +2 Legionary]",
+      "flavor": "\"We find that the Romans owed the conquest of the world to no other cause than continual military training, exact observance of discipline in their camps, and unwearied cultivation of the other arts of war.\" - Publius Flavius Vegetius Renatus c.385 A.D. - c. 450 A.D."
+    },
+    "trumpeter_fall_of_rome": {
+      "name": "Trumpeter",
+      "ability": "Each night*, you learn how many evil players publicly claimed to be Spartacus today.",
+      "flavor": "\"I have done everything that I should, but the outcome is in the hand of fortune.\" - Nero Claudius Caesar 37 A.D. - 68 A.D."
+    },
+    "mortician_fall_of_rome": {
+      "name": "Mortician",
+      "ability": "Each night*, if a player died by execution today you learn if either of their living neighbours are evil.",
+      "flavor": "\"Let no one weep for me, or celebrate my funeral with mourning; for I still live, as I pass to and fro through the mouths of men.\" - Quintus Ennius 239 B.C. - 169 B.C."
+    },
+    "standardbearer_fall_of_rome": {
+      "name": "Standard Bearer",
+      "ability": "When you are nominated, you may make a unique public statement about the nominator (not yourself). Tonight, you learn if the statement was true.",
+      "flavor": "\"Say not always what you know. But always know what you say.\" - Tiberius Claudius Caesar Augustus Germanicus 10 B.C - 54 A.D."
+    },
+    "centurion1_fall_of_rome": {
+      "name": "Centurion",
+      "ability": "If you nominate & execute a living player, their team loses. You are safe from the Demon. If you publicly claimed to be Spartacus today, you are drunk until dawn.",
+      "flavor": "\"It is easier to find men who will volunteer to die, than to find those who are willing to endure pain with patience.\" - Gaius Julius Caesar 100 B.C. - 44 B.C."
+    },
+    "merchant_fall_of_rome": {
+      "name": "Merchant",
+      "ability": "Once per game, at night*, choose to learn the characters of players that have nominated you.",
+      "flavor": "\"Greed is but a word jealous men inflict upon the ambitious.\" - Marcus Licinius Crassus 115 B.C. - 53 B.C."
+    },
+    "gladiator_fall_of_rome": {
+      "name": "Gladiator",
+      "ability": "Once per game, during the day, publicly choose a living player. Tonight, you and they wake & silently play roshambo: whoever loses dies (someone must lose).",
+      "flavor": "\"Forgive me. I was trained with swords! Not with words.\" - Crixus 72 B.C."
+    },
+    "actor_fall_of_rome": {
+      "name": "Actor",
+      "ability": "Once per game, during the day, publicly guess 3 players' character types (not yourself, 1 guess per type). That night, you learn how many you got correct.",
+      "flavor": "\"Have I played the part well? Then applaud me as I exit!\" - Caesar Augustus 63 B.C. - 14 A.D."
+    },
+    "blacksmith_fall_of_rome": {
+      "name": "Blacksmith",
+      "ability": "The 1st time the Demon kills you, you live & gain a not-in-play Townsfolk ability.",
+      "flavor": "\"Every new beginning comes from some other beginning’s end.\" - Lucius Annaeus Seneca 4 B.C. - 65 A.D."
+    },
+    "scholar_fall_of_rome": {
+      "name": "Scholar",
+      "ability": "The 1st time you nominate a living Outsider, they immediately become a not-in-play Townsfolk. [+1 Outsider]",
+      "flavor": "\"When you arise in the morning, think of what a precious privilege it is to be alive - to breathe, to think, to enjoy, to love.\" - Marcus Aurelius 121 A.D. - 180 A.D."
+    },
+    "thetwins_fall_of_rome": {
+      "name": "The Twins",
+      "ability": "You start knowing a player: if either of you are executed, all Townsfolk are drunk until dusk tomorrow.",
+      "flavor": "\"The quarrel that arose between Remus and Romulus demonstrated the division of the earthly city against itself...\" - Augustine of Hippo 354 A.D. - 430 A.D."
+    },
+    "winemaker_fall_of_rome": {
+      "name": "Winemaker",
+      "ability": "Your Townsfolk neighbours are drunk, but every other night, you are drunk until dusk, even if you are dead.",
+      "flavor": "\"In wine, there's truth.\" - Pliny the Elder 23 A.D. - 79 A.D."
+    },
+    "spartacus_fall_of_rome": {
+      "name": "Spartacus",
+      "ability": "If an evil player guesses you (once), your team loses. You might register as a Townsfolk; each day, if you did not publicly claim to be Spartacus, you don't.",
+      "flavor": "\"A man must not accept his fate. Or he will be destroyed by it.\" - Spartacus c. 103 B.C. - 71 B.C."
+    },
+    "badomen_fall_of_rome": {
+      "name": "Bad Omen",
+      "ability": "You do not know you are a Bad Omen. You think you are a Townsfolk, but you receive false information. You might register as evil, even if dead.",
+      "flavor": "\"Beware the Ides of March.\" - Gaius Julius Caesar 100 B.C. - 44 B.C."
+    },
+    "temptress_fall_of_rome": {
+      "name": "Temptress",
+      "ability": "On your 1st night choose two players: they learn that they were chosen. The 1st time one of them dies by execution, the other becomes evil that night.",
+      "flavor": "\"Nothing could part us in life, but now in death, we are likely to change places...\" - Cleopatra VII Thea Philopator 69 B.C. - 30 B.C."
+    },
+    "haruspex_fall_of_rome": {
+      "name": "Haruspex",
+      "ability": "Each night, choose a player: you learn their character. The 1st player you choose twice in this way, dies. [+ Spartacus]",
+      "flavor": "\"...but it is in and by means of piety and religion, and this especial wisdom of perceiving that all things are governed and managed by the divine power of the immortal gods, that we have been and are superior to all other countries and nations.\" - Marcus Tullius Cicero 106 B.C - 46 B.C."
+    },
+    "glykon1_fall_of_rome": {
+      "name": "Glykon",
+      "ability": "You might register as good. Until dawn, players you nominate register as the opposing alignment & if a Townsfolk, are also poisoned.",
+      "flavor": "\"When they went in, the thing, of course, seemed to them a miracle, that the formerly tiny snake within a few days had turned into so great a serpent, with a human face, moreover, and tame!\" Lucian Of Samosata (125 B.C. – c 180 B.C.) on Alexander of Abonoteichus 'The False Prophet'"
+    },
+    "augur_fall_of_rome": {
+      "name": "Augur",
+      "ability": "If a Townsfolk nominates you, they immediately become a Bad Omen.",
+      "flavor": "\"That everything in war and in peace, at home and abroad, was done only after taking the auspices?\" - Titus 'Livy' Livius 59 B.C. - 17 A.D."
+    },
+    "cleopatra_fall_of_rome": {
+      "name": "Cleopatra",
+      "ability": "Each night, choose two players: if they nominate tomorrow, they die that night. Each day, if a good player (Travellers don't count) does not nominate, evil wins.",
+      "flavor": "\"Fool! Don't you see now that I could have poisoned you a hundred times had I been able to live without you!\" - Cleopatra VII Thea Philopator 69 B.C. - 30 B.C."
+    },
+    "crassus_fall_of_rome": {
+      "name": "Crassus",
+      "ability": "Each night*, choose a player: they die. If the 1st Crassus publicly claims to be Spartacus & dies with 5 or more players alive, an evil player becomes Crassus.",
+      "flavor": "\"Those who aim at great deeds must also suffer greatly...\" - Lucius Mestrius 'Plutarch' Plutarchus c. 49 A.D. - 119 A.D."
+    },
+    "hannibal_fall_of_rome": {
+      "name": "Hannibal",
+      "ability": "You think you are a good character, but you are not. Minions learn 3 bluffs. Each night*, a player might die. The 1st Hannibal to die, becomes good. [+1 Hannibal]",
+      "flavor": "\"I will either find a way or make one.\" - Hannibal 247 B.C. - c 182 B.C."
+    },
+    "caesar_fall_of_rome": {
+      "name": "Caesar",
+      "ability": "Each night*, choose a player: they die. The 1st time an evil player dies by execution, that night, choose an additional player: they die.",
+      "flavor": "\"I came, I saw, I conquered.\" - Gaius Julius Caesar 100 B.C. - 44 B.C."
+    },
+    "mercenary_fall_of_rome": {
+      "name": "Mercenary",
+      "ability": "Each night*, gain the ability of a player who publicly claimed Spartacus today. If a Mercenary is exiled, you are exiled too. [+1 Mercenary of opposing alignment]",
+      "flavor": ""
+    },
+    "architect_fall_of_rome": {
+      "name": "Architect",
+      "ability": "Each night*, choose a player: 1) they become a not-in-play character of the same type, or 2) they swap characters with a player of the same type.",
+      "flavor": "\"I found Rome a city of bricks and left it the city of marbles.\" - Caesar Augustus 'Octavian' 63 B.C. – 14 A.D."
+    },
+    "sibyl_fall_of_rome": {
+      "name": "Sibyl",
+      "ability": "Each day, after the 1st execution, you may publicly choose a dead player: they may nominate. If the majority of the dead and yourself agree, they are executed.",
+      "flavor": "\"To such a degree will I be changed that I will be visible to no one; but I will be recognized by my voice. And with my voice, to you, I give a second chance.\""
+    },
+    "highpriest_fall_of_rome": {
+      "name": "High Priest",
+      "ability": "Each day, publicly choose a unique living player to bless: if a majority of players agree, something good happens to them.",
+      "flavor": "\"To ignore the signs of the gods is itself to deny their very existence.\" - Marcus Tullius Cicero 106 B.C. – 43 B.C."
+    },
+    "emperor_fall_of_rome": {
+      "name": "Emperor",
+      "ability": "Each day, choose the 1st execution's outcome. If you choose to protect today's execution: they survive. Otherwise, tonight you learn their alignment.",
+      "flavor": "\"Which death is preferable to every other? The unexpected.\""
     }
 }

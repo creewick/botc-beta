@@ -21,15 +21,14 @@ export function getScriptMeta(script: Script) {
 export function getCharacters(script: Script): Character[] {
   const meta = getScriptMeta(script)
 
-  const characterIds = script
+  const result = script
     .filter(item => item !== meta)
-    .map(item =>
-      typeof item === 'object' &&
-        'id' in item
-        ? item.id
-        : item)
+    .map(item => typeof item === 'object'
+      ? item as Character
+      : characters.find(c => c.id === item.replaceAll('_', '')) as Character
+     )
 
-  return characterIds.map(id => characters.find(c => c.id === id.replaceAll('_', '')) as Character)
+  return result
 }
 
 export function getJinxes(script: Script) {

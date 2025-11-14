@@ -11,5 +11,5 @@ export function getSuffix(type?: CharacterType) {
 
 export function getIcon(character: Character) {
   if (!character) return '';
-  return `icons/${character.id}${getSuffix(character.type)}.webp`;
+  return `icons/${character.id}${getSuffix(character.team)}.webp`;
 }

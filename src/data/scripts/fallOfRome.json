@@ -138,21 +138,6 @@
     "otherNight": 26
   },
   {
-    "id": "gladiator_fall_of_rome",
-    "image": "https://www.bloodstar.xyz/p/AlexS/Fall_of_Rome/gladiator_fall_of_rome.png",
-    "otherNightReminder": "If the Gladiator used their ability today wake the Gladiator and the player they chose: both players silently play roshambo (rock \"fist\", scissors \"two fingers\" or paper \"flat hand\"). If they both chose the same, play again. Play until someone wins. The loser dies.",
-    "reminders": [
-      "Duel",
-      "Dead",
-      "No Ability"
-    ],
-    "name": "Gladiator",
-    "team": "townsfolk",
-    "ability": "Once per game, during the day, publicly choose a living player. Tonight, you and they wake & silently play roshambo: whoever loses dies (someone must lose).",
-    "flavor": "Are you not entertained!",
-    "otherNight": 18
-  },
-  {
     "id": "actor_fall_of_rome",
     "image": "https://www.bloodstar.xyz/p/AlexS/Fall_of_Rome/actor_fall_of_rome.png",
     "otherNightReminder": "If the Actor used their ability today: Show the hand signal for the number (0, 1, 2, or 3) of CORRECT markers. Place the NO ABILITY marker.",
@@ -165,19 +150,6 @@
     "ability": "Once per game, during the day, publicly guess 3 players' character types (not yourself, 1 guess per type). That night, you learn how many you got correct. ",
     "flavor": "Have I played the part well? Then applaud me as I exit!",
     "otherNight": 25
-  },
-  {
-    "id": "blacksmith_fall_of_rome",
-    "image": "https://www.bloodstar.xyz/p/AlexS/Fall_of_Rome/blacksmith_fall_of_rome.png",
-    "otherNightReminder": "If the Blacksmith was killed by a Demon. Show the Blacksmith a not-in-play Townsfolk character token. Swap the not-in-play character token with the Blacksmith token. Place the IS THE BLACKSMITH token next to the not-in-play character token. Wake the Blacksmith and show 'You are', then their new character ability.",
-    "reminders": [
-      "Is the Blacksmith"
-    ],
-    "name": "Blacksmith",
-    "team": "townsfolk",
-    "ability": "The 1st time the Demon kills you, you live & gain a not-in-play Townsfolk ability.",
-    "flavor": "Every new beginning comes from some other beginning’s end.",
-    "otherNight": 17
   },
   {
     "id": "scholar_fall_of_rome",
@@ -193,6 +165,34 @@
     "ability": "The 1st time you nominate a living Outsider, they immediately become a not-in-play Townsfolk. [+1 Outsider]",
     "flavor": "When you arise in the morning, think of what a precious privilege it is to be alive - to breathe, to think, to enjoy, to love.",
     "otherNight": 2
+  },
+  {
+    "id": "gladiator_fall_of_rome",
+    "image": "https://www.bloodstar.xyz/p/AlexS/Fall_of_Rome/gladiator_fall_of_rome.png",
+    "otherNightReminder": "If the Gladiator used their ability today wake the Gladiator and the player they chose: both players silently play roshambo (rock \"fist\", scissors \"two fingers\" or paper \"flat hand\"). If they both chose the same, play again. Play until someone wins. The loser dies.",
+    "reminders": [
+      "Duel",
+      "Dead",
+      "No Ability"
+    ],
+    "name": "Gladiator",
+    "team": "townsfolk",
+    "ability": "Once per game, during the day, publicly choose a living player. Tonight, you and they wake & silently play roshambo: whoever loses dies (someone must lose).",
+    "flavor": "Are you not entertained!",
+    "otherNight": 18
+  },
+  {
+    "id": "blacksmith_fall_of_rome",
+    "image": "https://www.bloodstar.xyz/p/AlexS/Fall_of_Rome/blacksmith_fall_of_rome.png",
+    "otherNightReminder": "If the Blacksmith was killed by a Demon. Show the Blacksmith a not-in-play Townsfolk character token. Swap the not-in-play character token with the Blacksmith token. Place the IS THE BLACKSMITH token next to the not-in-play character token. Wake the Blacksmith and show 'You are', then their new character ability.",
+    "reminders": [
+      "Is the Blacksmith"
+    ],
+    "name": "Blacksmith",
+    "team": "townsfolk",
+    "ability": "The 1st time the Demon kills you, you live & gain a not-in-play Townsfolk ability.",
+    "flavor": "Every new beginning comes from some other beginning’s end.",
+    "otherNight": 17
   },
   {
     "id": "thetwins_fall_of_rome",
@@ -211,6 +211,17 @@
     "otherNight": 10
   },
   {
+    "id": "spartacus_fall_of_rome",
+    "image": "https://www.bloodstar.xyz/p/AlexS/Fall_of_Rome/spartacus_fall_of_rome.png",
+    "reminders": [
+      "Guess Used"
+    ],
+    "name": "Spartacus",
+    "team": "outsider",
+    "ability": "If an evil player guesses you (once), your team loses. You might register as a Townsfolk; each day, if you did not publicly claim to be Spartacus, you don't.",
+    "flavor": "Death is the only freedom a slave knows..."
+  },
+  {
     "id": "winemaker_fall_of_rome",
     "image": "https://www.bloodstar.xyz/p/AlexS/Fall_of_Rome/winemaker_fall_of_rome.png",
     "firstNightReminder": "Place either the ODD or EVEN token. If ODD, the Winemaker is drunk on the 1st night and every other night after. Otherwise: the Winemaker is drunk on the 2nd night and every other night after.",
@@ -226,17 +237,6 @@
     "flavor": "In wine, there's truth.",
     "firstNight": 15,
     "otherNight": 9
-  },
-  {
-    "id": "spartacus_fall_of_rome",
-    "image": "https://www.bloodstar.xyz/p/AlexS/Fall_of_Rome/spartacus_fall_of_rome.png",
-    "reminders": [
-      "Guess Used"
-    ],
-    "name": "Spartacus",
-    "team": "outsider",
-    "ability": "If an evil player guesses you (once), your team loses. You might register as a Townsfolk; each day, if you did not publicly claim to be Spartacus, you don't.",
-    "flavor": "Death is the only freedom a slave knows..."
   },
   {
     "id": "badomen_fall_of_rome",

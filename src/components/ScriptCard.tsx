@@ -15,7 +15,7 @@ interface ScriptCardProps {
 
 function ScriptCardInternal({ script, scriptId }: ScriptCardProps) {
   const meta = getScriptMeta(script)
-  const characters = getCharacters(script).reverse().filter(c => ['demon', 'minion'].includes(c?.type ?? ''))
+  const characters = getCharacters(script).reverse().filter(c => ['demon', 'minion'].includes(c?.team ?? ''))
 
   return (
     <Button className="scriptCard" href={`./scripts/${scriptId}`}>

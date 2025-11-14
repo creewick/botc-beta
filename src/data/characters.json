@@ -13,47 +13,47 @@
     },
     {
       "id": "minioninfo",
-      "type": "minion",
+      "team": "minion",
       "edition": "special",
       "firstNightOrder": 14
     },
     {
       "id": "demoninfo",
-      "type": "demon",
+      "team": "demon",
       "edition": "special",
       "firstNightOrder": 18
     },
     {
       "id": "washerwoman",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "tb",
       "setup": false,
       "firstNightOrder": 46
     },
     {
       "id": "librarian",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "tb",
       "setup": false,
       "firstNightOrder": 47
     },
     {
       "id": "investigator",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "tb",
       "setup": false,
       "firstNightOrder": 48
     },
     {
       "id": "chef",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "tb",
       "setup": false,
       "firstNightOrder": 49
     },
     {
       "id": "empath",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "tb",
       "setup": false,
       "firstNightOrder": 50,
@@ -61,7 +61,7 @@
     },
     {
       "id": "fortuneteller",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "tb",
       "setup": false,
       "firstNightOrder": 51,
@@ -69,52 +69,52 @@
     },
     {
       "id": "undertaker",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "tb",
       "setup": false,
       "otherNightOrder": 71
     },
     {
       "id": "monk",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "tb",
       "setup": false,
       "otherNightOrder": 20
     },
     {
       "id": "ravenkeeper",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "tb",
       "setup": false,
       "otherNightOrder": 68
     },
     {
       "id": "virgin",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "tb",
       "setup": false
     },
     {
       "id": "slayer",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "tb",
       "setup": false
     },
     {
       "id": "soldier",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "tb",
       "setup": false
     },
     {
       "id": "mayor",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "tb",
       "setup": false
     },
     {
       "id": "butler",
-      "type": "outsider",
+      "team": "outsider",
       "edition": "tb",
       "setup": false,
       "firstNightOrder": 52,
@@ -123,25 +123,25 @@
     },
     {
       "id": "drunk",
-      "type": "outsider",
+      "team": "outsider",
       "edition": "tb",
       "setup": true
     },
     {
       "id": "recluse",
-      "type": "outsider",
+      "team": "outsider",
       "edition": "tb",
       "setup": false
     },
     {
       "id": "saint",
-      "type": "outsider",
+      "team": "outsider",
       "edition": "tb",
       "setup": false
     },
     {
       "id": "poisoner",
-      "type": "minion",
+      "team": "minion",
       "edition": "tb",
       "setup": false,
       "firstNightOrder": 27,
@@ -149,7 +149,7 @@
     },
     {
       "id": "spy",
-      "type": "minion",
+      "team": "minion",
       "edition": "tb",
       "setup": false,
       "firstNightOrder": 66,
@@ -158,7 +158,7 @@
     },
     {
       "id": "scarletwoman",
-      "type": "minion",
+      "team": "minion",
       "edition": "tb",
       "setup": false,
       "otherNightOrder": 29,
@@ -166,20 +166,20 @@
     },
     {
       "id": "baron",
-      "type": "minion",
+      "team": "minion",
       "edition": "tb",
       "setup": true
     },
     {
       "id": "imp",
-      "type": "demon",
+      "team": "demon",
       "edition": "tb",
       "setup": false,
       "otherNightOrder": 35
     },
     {
       "id": "bureaucrat",
-      "type": "traveller",
+      "team": "traveller",
       "edition": "tb",
       "setup": false,
       "firstNightOrder": 6,
@@ -187,7 +187,7 @@
     },
     {
       "id": "thief",
-      "type": "traveller",
+      "team": "traveller",
       "edition": "tb",
       "setup": false,
       "firstNightOrder": 7,
@@ -195,25 +195,25 @@
     },
     {
       "id": "gunslinger",
-      "type": "traveller",
+      "team": "traveller",
       "edition": "tb",
       "setup": false
     },
     {
       "id": "scapegoat",
-      "type": "traveller",
+      "team": "traveller",
       "edition": "tb",
       "setup": false
     },
     {
       "id": "beggar",
-      "type": "traveller",
+      "team": "traveller",
       "edition": "tb",
       "setup": false
     },
     {
       "id": "grandmother",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "bmr",
       "setup": false,
       "firstNightOrder": 53,
@@ -221,7 +221,7 @@
     },
     {
       "id": "sailor",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "bmr",
       "setup": false,
       "firstNightOrder": 20,
@@ -229,7 +229,7 @@
     },
     {
       "id": "chambermaid",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "bmr",
       "setup": false,
       "firstNightOrder": 70,
@@ -237,35 +237,35 @@
     },
     {
       "id": "exorcist",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "bmr",
       "setup": false,
       "otherNightOrder": 32
     },
     {
       "id": "innkeeper",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "bmr",
       "setup": false,
       "otherNightOrder": 15
     },
     {
       "id": "gambler",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "bmr",
       "setup": false,
       "otherNightOrder": 17
     },
     {
       "id": "gossip",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "bmr",
       "setup": false,
       "otherNightOrder": 53
     },
     {
       "id": "courtier",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "bmr",
       "setup": false,
       "firstNightOrder": 29,
@@ -273,58 +273,58 @@
     },
     {
       "id": "professor",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "bmr",
       "setup": false,
       "otherNightOrder": 59
     },
     {
       "id": "minstrel",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "bmr",
       "setup": false
     },
     {
       "id": "tealady",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "bmr",
       "setup": false
     },
     {
       "id": "pacifist",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "bmr",
       "setup": false
     },
     {
       "id": "fool",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "bmr",
       "setup": false
     },
     {
       "id": "tinker",
-      "type": "outsider",
+      "team": "outsider",
       "edition": "bmr",
       "setup": false,
       "otherNightOrder": 65
     },
     {
       "id": "moonchild",
-      "type": "outsider",
+      "team": "outsider",
       "edition": "bmr",
       "setup": false,
       "otherNightOrder": 66
     },
     {
       "id": "goon",
-      "type": "outsider",
+      "team": "outsider",
       "edition": "bmr",
       "setup": false
     },
     {
       "id": "lunatic",
-      "type": "outsider",
+      "team": "outsider",
       "edition": "bmr",
       "setup": false,
       "firstNightOrder": 16,
@@ -332,7 +332,7 @@
     },
     {
       "id": "godfather",
-      "type": "minion",
+      "team": "minion",
       "edition": "bmr",
       "setup": true,
       "firstNightOrder": 32,
@@ -340,7 +340,7 @@
     },
     {
       "id": "devilsadvocate",
-      "type": "minion",
+      "team": "minion",
       "edition": "bmr",
       "setup": false,
       "firstNightOrder": 34,
@@ -348,28 +348,28 @@
     },
     {
       "id": "assassin",
-      "type": "minion",
+      "team": "minion",
       "edition": "bmr",
       "setup": false,
       "otherNightOrder": 51
     },
     {
       "id": "mastermind",
-      "type": "minion",
+      "team": "minion",
       "edition": "bmr",
       "setup": false,
       "jinxes": ["alhadikhia"]
     },
     {
       "id": "zombuul",
-      "type": "demon",
+      "team": "demon",
       "edition": "bmr",
       "setup": false,
       "otherNightOrder": 36
     },
     {
       "id": "pukka",
-      "type": "demon",
+      "team": "demon",
       "edition": "bmr",
       "setup": false,
       "firstNightOrder": 41,
@@ -377,59 +377,59 @@
     },
     {
       "id": "shabaloth",
-      "type": "demon",
+      "team": "demon",
       "edition": "bmr",
       "setup": false,
       "otherNightOrder": 38
     },
     {
       "id": "po",
-      "type": "demon",
+      "team": "demon",
       "edition": "bmr",
       "setup": false,
       "otherNightOrder": 39
     },
     {
       "id": "apprentice",
-      "type": "traveller",
+      "team": "traveller",
       "edition": "bmr",
       "setup": false,
       "firstNightOrder": 4
     },
     {
       "id": "matron",
-      "type": "traveller",
+      "team": "traveller",
       "edition": "bmr",
       "setup": false
     },
     {
       "id": "judge",
-      "type": "traveller",
+      "team": "traveller",
       "edition": "bmr",
       "setup": false
     },
     {
       "id": "bishop",
-      "type": "traveller",
+      "team": "traveller",
       "edition": "bmr",
       "setup": false
     },
     {
       "id": "voudon",
-      "type": "traveller",
+      "team": "traveller",
       "edition": "bmr",
       "setup": false
     },
     {
       "id": "clockmaker",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "snv",
       "setup": false,
       "firstNightOrder": 54
     },
     {
       "id": "dreamer",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "snv",
       "setup": false,
       "firstNightOrder": 55,
@@ -437,7 +437,7 @@
     },
     {
       "id": "snakecharmer",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "snv",
       "setup": false,
       "firstNightOrder": 31,
@@ -445,7 +445,7 @@
     },
     {
       "id": "mathematician",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "snv",
       "setup": false,
       "firstNightOrder": 71,
@@ -454,34 +454,34 @@
     },
     {
       "id": "flowergirl",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "snv",
       "setup": false,
       "otherNightOrder": 73
     },
     {
       "id": "towncrier",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "snv",
       "setup": false,
       "otherNightOrder": 74
     },
     {
       "id": "oracle",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "snv",
       "setup": false,
       "otherNightOrder": 75
     },
     {
       "id": "savant",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "snv",
       "setup": false
     },
     {
       "id": "seamstress",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "snv",
       "setup": false,
       "firstNightOrder": 56,
@@ -489,7 +489,7 @@
     },
     {
       "id": "philosopher",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "snv",
       "setup": false,
       "firstNightOrder": 9,
@@ -497,60 +497,60 @@
     },
     {
       "id": "artist",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "snv",
       "setup": false
     },
     {
       "id": "juggler",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "snv",
       "setup": false,
       "otherNightOrder": 77
     },
     {
       "id": "sage",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "snv",
       "setup": false,
       "otherNightOrder": 57
     },
     {
       "id": "mutant",
-      "type": "outsider",
+      "team": "outsider",
       "edition": "snv",
       "setup": false
     },
     {
       "id": "sweetheart",
-      "type": "outsider",
+      "team": "outsider",
       "edition": "snv",
       "setup": false,
       "otherNightOrder": 56
     },
     {
       "id": "barber",
-      "type": "outsider",
+      "team": "outsider",
       "edition": "snv",
       "setup": false,
       "otherNightOrder": 55
     },
     {
       "id": "klutz",
-      "type": "outsider",
+      "team": "outsider",
       "edition": "snv",
       "setup": false
     },
     {
       "id": "eviltwin",
-      "type": "minion",
+      "team": "minion",
       "edition": "snv",
       "setup": false,
       "firstNightOrder": 35
     },
     {
       "id": "witch",
-      "type": "minion",
+      "team": "minion",
       "edition": "snv",
       "setup": false,
       "firstNightOrder": 36,
@@ -558,7 +558,7 @@
     },
     {
       "id": "cerenovus",
-      "type": "minion",
+      "team": "minion",
       "edition": "snv",
       "setup": false,
       "firstNightOrder": 37,
@@ -567,7 +567,7 @@
     },
     {
       "id": "pithag",
-      "type": "minion",
+      "team": "minion",
       "edition": "snv",
       "setup": false,
       "otherNightOrder": 25,
@@ -575,28 +575,28 @@
     },
     {
       "id": "fanggu",
-      "type": "demon",
+      "team": "demon",
       "edition": "snv",
       "setup": true,
       "otherNightOrder": 40
     },
     {
       "id": "vigormortis",
-      "type": "demon",
+      "team": "demon",
       "edition": "snv",
       "setup": true,
       "otherNightOrder": 44
     },
     {
       "id": "nodashii",
-      "type": "demon",
+      "team": "demon",
       "edition": "snv",
       "setup": false,
       "otherNightOrder": 41
     },
     {
       "id": "vortox",
-      "type": "demon",
+      "team": "demon",
       "edition": "snv",
       "setup": false,
       "otherNightOrder": 42,
@@ -604,7 +604,7 @@
     },
     {
       "id": "barista",
-      "type": "traveller",
+      "team": "traveller",
       "edition": "snv",
       "setup": false,
       "firstNightOrder": 5,
@@ -612,40 +612,40 @@
     },
     {
       "id": "harlot",
-      "type": "traveller",
+      "team": "traveller",
       "edition": "snv",
       "setup": false,
       "otherNightOrder": 5
     },
     {
       "id": "butcher",
-      "type": "traveller",
+      "team": "traveller",
       "edition": "snv",
       "setup": false
     },
     {
       "id": "bonecollector",
-      "type": "traveller",
+      "team": "traveller",
       "edition": "snv",
       "setup": false,
       "otherNightOrder": 6
     },
     {
       "id": "deviant",
-      "type": "traveller",
+      "team": "traveller",
       "edition": "snv",
       "setup": false
     },
     {
       "id": "noble",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "",
       "setup": false,
       "firstNightOrder": 59
     },
     {
       "id": "bountyhunter",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "",
       "setup": false,
       "firstNightOrder": 63,
@@ -654,14 +654,14 @@
     },
     {
       "id": "pixie",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "",
       "setup": false,
       "firstNightOrder": 42
     },
     {
       "id": "general",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "",
       "setup": false,
       "firstNightOrder": 69,
@@ -669,7 +669,7 @@
     },
     {
       "id": "preacher",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "",
       "setup": false,
       "firstNightOrder": 23,
@@ -677,7 +677,7 @@
     },
     {
       "id": "king",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "",
       "setup": false,
       "firstNightOrder": 19,
@@ -685,7 +685,7 @@
     },
     {
       "id": "balloonist",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "",
       "setup": true,
       "firstNightOrder": 60,
@@ -693,7 +693,7 @@
     },
     {
       "id": "cultleader",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "",
       "setup": false,
       "firstNightOrder": 65,
@@ -701,14 +701,14 @@
     },
     {
       "id": "lycanthrope",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "",
       "setup": false,
       "otherNightOrder": 33
     },
     {
       "id": "amnesiac",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "",
       "setup": false,
       "firstNightOrder": 45,
@@ -716,7 +716,7 @@
     },
     {
       "id": "nightwatchman",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "",
       "setup": false,
       "firstNightOrder": 64,
@@ -724,7 +724,7 @@
     },
     {
       "id": "engineer",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "",
       "setup": false,
       "firstNightOrder": 22,
@@ -732,13 +732,13 @@
     },
     {
       "id": "fisherman",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "",
       "setup": false
     },
     {
       "id": "huntsman",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "",
       "setup": true,
       "firstNightOrder": 43,
@@ -746,35 +746,35 @@
     },
     {
       "id": "alchemist",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "",
       "setup": false,
       "firstNightOrder": 10
     },
     {
       "id": "farmer",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "",
       "setup": false,
       "otherNightOrder": 64
     },
     {
       "id": "magician",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "",
       "setup": false,
       "firstNightOrder": 13
     },
     {
       "id": "choirboy",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "",
       "setup": true,
       "otherNightOrder": 60
     },
     {
       "id": "poppygrower",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "",
       "setup": false,
       "firstNightOrder": 11,
@@ -782,47 +782,47 @@
     },
     {
       "id": "atheist",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "",
       "setup": true
     },
     {
       "id": "cannibal",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "",
       "setup": false,
       "jinxes": ["butler", "juggler", "zealot", "poppygrower"]
     },
     {
       "id": "snitch",
-      "type": "outsider",
+      "team": "outsider",
       "edition": "",
       "setup": false,
       "firstNightOrder": 15
     },
     {
       "id": "acrobat",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "",
       "setup": false,
       "otherNightOrder": 18
     },
     {
       "id": "puzzlemaster",
-      "type": "outsider",
+      "team": "outsider",
       "edition": "",
       "setup": false
     },
     {
       "id": "heretic",
-      "type": "outsider",
+      "team": "outsider",
       "edition": "",
       "setup": false,
       "jinxes": ["godfather", "baron", "pithag", "spy", "widow", "lleech", "boffin"]
     },
     {
       "id": "damsel",
-      "type": "outsider",
+      "team": "outsider",
       "edition": "",
       "setup": false,
       "firstNightOrder": 44,
@@ -830,19 +830,19 @@
     },
     {
       "id": "golem",
-      "type": "outsider",
+      "team": "outsider",
       "edition": "",
       "setup": false
     },
     {
       "id": "politician",
-      "type": "outsider",
+      "team": "outsider",
       "edition": "",
       "setup": false
     },
     {
       "id": "widow",
-      "type": "minion",
+      "team": "minion",
       "edition": "",
       "setup": false,
       "firstNightOrder": 28,
@@ -850,7 +850,7 @@
     },
     {
       "id": "fearmonger",
-      "type": "minion",
+      "team": "minion",
       "edition": "",
       "setup": false,
       "firstNightOrder": 38,
@@ -858,19 +858,19 @@
     },
     {
       "id": "psychopath",
-      "type": "minion",
+      "team": "minion",
       "edition": "",
       "setup": false
     },
     {
       "id": "goblin",
-      "type": "minion",
+      "team": "minion",
       "edition": "",
       "setup": false
     },
     {
       "id": "mezepheles",
-      "type": "minion",
+      "team": "minion",
       "edition": "",
       "setup": false,
       "firstNightOrder": 40,
@@ -878,7 +878,7 @@
     },
     {
       "id": "marionette",
-      "type": "minion",
+      "team": "minion",
       "edition": "",
       "setup": true,
       "firstNightOrder": 21,
@@ -886,13 +886,13 @@
     },
     {
       "id": "boomdandy",
-      "type": "minion",
+      "team": "minion",
       "edition": "",
       "setup": false
     },
     {
       "id": "lilmonsta",
-      "type": "demon",
+      "team": "demon",
       "edition": "",
       "setup": true,
       "firstNightOrder": 24,
@@ -901,7 +901,7 @@
     },
     {
       "id": "lleech",
-      "type": "demon",
+      "team": "demon",
       "edition": "",
       "setup": false,
       "firstNightOrder": 25,
@@ -910,14 +910,14 @@
     },
     {
       "id": "alhadikhia",
-      "type": "demon",
+      "team": "demon",
       "edition": "",
       "setup": false,
       "otherNightOrder": 46
     },
     {
       "id": "legion",
-      "type": "demon",
+      "team": "demon",
       "edition": "",
       "setup": true,
       "otherNightOrder": 34,
@@ -925,7 +925,7 @@
     },
     {
       "id": "leviathan",
-      "type": "demon",
+      "team": "demon",
       "edition": "",
       "setup": false,
       "firstNightOrder": 73,
@@ -934,20 +934,20 @@
     },
     {
       "id": "riot",
-      "type": "demon",
+      "team": "demon",
       "edition": "",
       "setup": false,
       "jinxes": ["mayor", "monk", "farmer", "innkeeper", "sage", "banshee", "ravenkeeper", "soldier", "grandmother", "king", "exorcist"]
     },
     {
       "id": "gangster",
-      "type": "traveller",
+      "team": "traveller",
       "edition": "",
       "setup": false
     },
     {
       "id": "organgrinder",
-      "type": "minion",
+      "team": "minion",
       "edition": "",
       "setup": false,
       "firstNightOrder": 33,
@@ -955,7 +955,7 @@
     },
     {
       "id": "vizier",
-      "type": "minion",
+      "team": "minion",
       "edition": "",
       "setup": false,
       "firstNightOrder": 74,
@@ -963,21 +963,21 @@
     },
     {
       "id": "knight",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "",
       "setup": false,
       "firstNightOrder": 58
     },
     {
       "id": "steward",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "",
       "setup": false,
       "firstNightOrder": 57
     },
     {
       "id": "highpriestess",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "",
       "setup": false,
       "firstNightOrder": 68,
@@ -985,7 +985,7 @@
     },
     {
       "id": "harpy",
-      "type": "minion",
+      "team": "minion",
       "edition": "",
       "setup": false,
       "firstNightOrder": 39,
@@ -993,35 +993,35 @@
     },
     {
       "id": "plaguedoctor",
-      "type": "outsider",
+      "team": "outsider",
       "edition": "",
       "setup": false,
       "jinxes": ["eviltwin", "fearmonger", "goblin", "spy", "scarletwoman", "boomdandy", "baron", "marionette"]
     },
     {
       "id": "shugenja",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "",
       "setup": false,
       "firstNightOrder": 61
     },
     {
       "id": "ojo",
-      "type": "demon",
+      "team": "demon",
       "edition": "",
       "setup": false,
       "otherNightOrder": 45
     },
     {
       "id": "hatter",
-      "type": "outsider",
+      "team": "outsider",
       "edition": "",
       "setup": false,
       "otherNightOrder": 54
     },
     {
       "id": "kazali",
-      "type": "demon",
+      "team": "demon",
       "edition": "",
       "setup": true,
       "firstNightOrder": 3,
@@ -1030,7 +1030,7 @@
     },
     {
       "id": "villageidiot",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "",
       "setup": true,
       "firstNightOrder": 62,
@@ -1038,7 +1038,7 @@
     },
     {
       "id": "yaggababble",
-      "type": "demon",
+      "team": "demon",
       "edition": "",
       "setup": false,
       "firstNightOrder": 12,
@@ -1047,7 +1047,7 @@
     },
     {
       "id": "summoner",
-      "type": "minion",
+      "team": "minion",
       "edition": "",
       "setup": true,
       "firstNightOrder": 17,
@@ -1056,14 +1056,14 @@
     },
     {
       "id": "banshee",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "",
       "setup": false,
       "otherNightOrder": 58
     },
     {
       "id": "ogre",
-      "type": "outsider",
+      "team": "outsider",
       "edition": "",
       "setup": false,
       "firstNightOrder": 67,
@@ -1071,19 +1071,19 @@
     },
     {
       "id": "alsaahir",
-      "type": "townsfolk",
+      "team": "townsfolk",
       "edition": "",
       "setup": false
     },
     {
       "id": "zealot",
-      "type": "outsider",
+      "team": "outsider",
       "edition": "",
       "setup": false
     },
     {
       "id": "lordoftyphon",
-      "type": "demon",
+      "team": "demon",
       "edition": "",
       "setup": true,
       "firstNightOrder": 2,
@@ -1091,7 +1091,7 @@
     },
     {
       "id": "boffin",
-      "type": "minion",
+      "team": "minion",
       "edition": "",
       "setup": false,
       "firstNightOrder": 8,
@@ -1099,13 +1099,13 @@
     },
     {
       "id": "gnome",
-      "type": "traveller",
+      "team": "traveller",
       "edition": "",
       "setup": false
     },
     {
       "id": "xaan",
-      "type": "minion",
+      "team": "minion",
       "edition": "",
       "setup": true,
       "firstNightOrder": 26,
@@ -1113,7 +1113,7 @@
     },
     {
       "id": "wizard",
-      "type": "minion",
+      "team": "minion",
       "edition": "",
       "setup": false,
       "firstNightOrder": 30,
@@ -1121,45 +1121,45 @@
     },
     {
       "id": "doomsayer",
-      "type": "fabled",
+      "team": "fabled",
       "edition": "fabled",
       "setup": false
     },
     {
       "id": "angel",
-      "type": "fabled",
+      "team": "fabled",
       "edition": "fabled",
       "setup": false,
       "firstNightOrder": 1
     },
     {
       "id": "buddhist",
-      "type": "fabled",
+      "team": "fabled",
       "edition": "fabled",
       "setup": false,
       "firstNightOrder": 1
     },
     {
       "id": "hellslibrarian",
-      "type": "fabled",
+      "team": "fabled",
       "edition": "fabled",
       "setup": false
     },
     {
       "id": "revolutionary",
-      "type": "fabled",
+      "team": "fabled",
       "edition": "fabled",
       "setup": false
     },
     {
       "id": "fiddler",
-      "type": "fabled",
+      "team": "fabled",
       "edition": "fabled",
       "setup": false
     },
     {
       "id": "toymaker",
-      "type": "fabled",
+      "team": "fabled",
       "edition": "fabled",
       "setup": false,
       "firstNightOrder": 1,
@@ -1167,63 +1167,63 @@
     },
     {
       "id": "fibbin",
-      "type": "fabled",
+      "team": "fabled",
       "edition": "fabled",
       "setup": false
     },
     {
       "id": "duchess",
-      "type": "fabled",
+      "team": "fabled",
       "edition": "fabled",
       "setup": false,
       "otherNightOrder": 1
     },
     {
       "id": "sentinel",
-      "type": "fabled",
+      "team": "fabled",
       "edition": "fabled",
       "setup": true
     },
     {
       "id": "spiritofivory",
-      "type": "fabled",
+      "team": "fabled",
       "edition": "fabled",
       "setup": false
     },
     {
       "id": "djinn",
-      "type": "fabled",
+      "team": "fabled",
       "edition": "fabled",
       "setup": false
     },
     {
       "id": "stormcatcher",
-      "type": "fabled",
+      "team": "fabled",
       "edition": "fabled",
       "setup": false,
       "firstNightOrder": 1
     },
     {
       "id": "gardener",
-      "type": "fabled",
+      "team": "fabled",
       "edition": "fabled",
       "setup": false
     },
     {
       "id": "bootlegger",
-      "type": "fabled",
+      "team": "fabled",
       "edition": "fabled",
       "setup": false
     },
     {
       "id": "ferryman",
-      "type": "fabled",
+      "team": "fabled",
       "edition": "fabled",
       "setup": false
     },
     {
       "id": "phantomDetectives",
-      "type": "fabled",
+      "team": "fabled",
       "edition": "fabled",
       "setup": false
     }

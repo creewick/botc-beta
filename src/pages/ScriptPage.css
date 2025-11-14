@@ -117,12 +117,6 @@
     display: none;
 }
 
-.not-first-night {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-}
-
 .night-order {
     flex: 1 1 280px;
 }

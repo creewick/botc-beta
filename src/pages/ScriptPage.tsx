@@ -20,8 +20,8 @@ export default function ScriptPage() {
 
   function renderNightOrder(firstNight: boolean) {
     const characters = firstNight
-      ? scriptCharacters.filter(c => c?.firstNightOrder && BASIC_CHARACTER_TYPES.includes(c?.type as BasicCharacterType)).sort((a, b) => a.firstNightOrder! - b.firstNightOrder!)
-      : scriptCharacters.filter(c => c?.otherNightOrder && BASIC_CHARACTER_TYPES.includes(c?.type as BasicCharacterType)).sort((a, b) => a.otherNightOrder! - b.otherNightOrder!);
+      ? scriptCharacters.filter(c => c?.firstNightOrder && BASIC_CHARACTER_TYPES.includes(c?.team as BasicCharacterType)).sort((a, b) => a.firstNightOrder! - b.firstNightOrder!)
+      : scriptCharacters.filter(c => c?.otherNightOrder && BASIC_CHARACTER_TYPES.includes(c?.team as BasicCharacterType)).sort((a, b) => a.otherNightOrder! - b.otherNightOrder!);
     
     return (
       <div className={`${firstNight ? 'first-night' : 'other-night'} night-order`}>
@@ -37,7 +37,7 @@ export default function ScriptPage() {
         <Button href={`../characters/${character.id}`}>
           <img className="icon" src={`${base}${getIcon(character)}`} width={60} />
         </Button>
-        <h3 className={`${character.type} name`}>
+        <h3 className={`${character.team} name`}>
           <Translation path={`${character.id}.name`} />
         </h3>
       </div>
@@ -45,8 +45,8 @@ export default function ScriptPage() {
   }
 
   function renderCharacterType(type: CharacterType) {
-    const characters = scriptCharacters.filter(c => c?.type === type);
-    const orderedCharacters = width >= 616
+    const characters = scriptCharacters.filter(c => c?.team === type);
+    const orderedCharacters = width >= 616 && characters.length > 1
       ? twoColumnReorder(characters)
       : characters;
 
@@ -55,7 +55,7 @@ export default function ScriptPage() {
     return (
       <div key={type} className="flex characters-group">
         <h2 className={'alignment-name ' + type} >
-          <Translation path={`characterType.${type}`} />
+          { type === 'fabled' ? <>&nbsp;</> :  <Translation path={`characterType.${type}`} /> }
         </h2>
         <div className="flex flex-wrap gap-12">
           {orderedCharacters.map(renderCharacter)}
@@ -77,10 +77,10 @@ export default function ScriptPage() {
     return (
       <div className="character" key={character.id}>
         <Button href={`../characters/${character.id}`}>
-          <img className="icon" src={`${base}${getIcon(character)}`} width={95} />
+          <img className="icon" src={character.image ?? `${base}${getIcon(character)}`} width={95} />
         </Button>
         <div style={{ flex: '1 1 auto' }}>
-          <h3 className={`${character.type} name`}>
+          <h3 className={`${character.team} name`}>
             <Translation path={`${character.id}.name`} />
             {jinxes?.map((j: Character) => <img src={`${base}${getIcon(j)}`} width={40} style={{ marginBottom: -14, marginRight: -14 }} />)}
           </h3>
@@ -122,7 +122,7 @@ export default function ScriptPage() {
 
   function renderFabled() {
     return scriptCharacters
-      .filter(c => c?.type === 'fabled')
+      .filter(c => c?.team === 'fabled')
       .map(c => renderNightOrderCharacter(c));
   }
 
@@ -150,9 +150,13 @@ export default function ScriptPage() {
           </h1>
         </div>
         {BASIC_CHARACTER_TYPES.map(renderCharacterType)}
-        <span className="flex not-first-night" style={{justifyContent: 'center', alignItems: 'center', minHeight: 40 }}>
-          * <Translation path="script.notFirstNight" />
-        </span>
+        <div className="flex">
+          <h2 className="alignment-name"></h2>
+          <span className="flex" style={{width: '100%', justifyContent: 'center', alignItems: 'center' }}>
+            * <Translation path="script.notFirstNight" />
+          </span>
+        </div>
+        
       </div>
       <div className="content dumbledore flex gap-12" style={{ paddingTop: 16 }}>
         {renderNightOrder(true)}

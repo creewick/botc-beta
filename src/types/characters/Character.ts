@@ -3,8 +3,10 @@ import type { Edition } from "../Edition";
 
 export default interface Character {
     id: string;
+    image?: string;
+    ability?: string;
     edition?: Edition;
-    type?: CharacterType;
+    team?: CharacterType;
     setup?: boolean;
     firstNightOrder?: number;
     otherNightOrder?: number;
