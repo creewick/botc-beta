@@ -18,6 +18,7 @@ export default function ScriptPage() {
   const scriptCharacters = getCharacters(script);
   const base = import.meta.env.BASE_URL;
 
+
   function renderNightOrder(firstNight: boolean) {
     const characters = firstNight
       ? scriptCharacters.filter(c => c?.firstNightOrder && BASIC_CHARACTER_TYPES.includes(c?.team as BasicCharacterType)).sort((a, b) => a.firstNightOrder! - b.firstNightOrder!)
@@ -143,7 +144,7 @@ export default function ScriptPage() {
       </div>
       <QRCodeCanvas className="qr" value={window.location.href} size={70} bgColor="#0000" fgColor="#5c1f22" />
       <div className="content dumbledore flex flex-column">
-        <div className="flex">
+        <div className="flex characters-group">
           <h2 className="alignment-name">&nbsp;</h2>
           <h1 className="script-title" style={{ flexGrow: 1 }}>
             <Translation path={id ?? ''} />
@@ -158,7 +159,7 @@ export default function ScriptPage() {
         </div>
         
       </div>
-      <div className="content dumbledore flex gap-12" style={{ paddingTop: 16 }}>
+      <div className="content dumbledore flex script-order gap-12" style={{ paddingTop: 16 }}>
         {renderNightOrder(true)}
         <div className="jinx-list">
           <h1 className="script-title" style={{ textAlign: 'center' }}>

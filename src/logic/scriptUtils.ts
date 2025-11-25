@@ -24,7 +24,7 @@ export function getCharacters(script: Script): Character[] {
   const result = script
     .filter(item => item !== meta)
     .map(item => typeof item === 'object'
-      ? item as Character
+      ? (characters.find(c => c.id === item.id) as Character) ?? item as Character
       : characters.find(c => c.id === item.replaceAll('_', '')) as Character
      )
 

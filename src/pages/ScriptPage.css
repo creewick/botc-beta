@@ -35,7 +35,7 @@
     margin-bottom: 20px;
 }
 
-.characters-group:not(:last-of-type)::after {
+.characters-group:not(:first-of-type):not(:last-of-type)::after {
     content: '';
     width: 100%;
     min-width: 200px;
@@ -149,6 +149,26 @@
         writing-mode: initial;
         margin-right: -16px;
         padding: 0;
+    }
+
+    .characters-group::after {
+        display: none;
+    }
+
+    .script-order {
+        flex-direction: column;
+    }
+
+    .jinx-list {
+        order: 1;
+    }
+
+    .first-night {
+        order: 2;
+    }
+
+    .other-night {
+        order: 3;
     }
 }
 
