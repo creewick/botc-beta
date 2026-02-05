@@ -1226,5 +1226,11 @@
       "team": "fabled",
       "edition": "fabled",
       "setup": false
+    },
+    {
+      "id": "princess",
+      "team": "townsfolk",
+      "edition": "",
+      "setup": false
     }
   ]
