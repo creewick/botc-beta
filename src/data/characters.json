@@ -1231,6 +1231,7 @@
       "id": "princess",
       "team": "townsfolk",
       "edition": "",
-      "setup": false
+      "setup": false,
+      "jinxes": ["eviltwin", "cannibal"]
     }
   ]
