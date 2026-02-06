@@ -791,7 +791,7 @@
       "team": "townsfolk",
       "edition": "",
       "setup": false,
-      "jinxes": ["butler", "juggler", "zealot", "poppygrower"]
+      "jinxes": ["butler", "juggler", "zealot", "poppygrower", "princess"]
     },
     {
       "id": "snitch",
@@ -1231,7 +1231,6 @@
       "id": "princess",
       "team": "townsfolk",
       "edition": "",
-      "setup": false,
-      "jinxes": ["eviltwin", "cannibal"]
+      "setup": false
     }
   ]
